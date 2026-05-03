@@ -1,9 +1,6 @@
 .container {
   padding: 2rem;
   font-family: 'Segoe UI', sans-serif;
-  background: linear-gradient(135deg, #1f1f2e, #2e2e4d);
-  color: #fff;
-  min-height: 100vh;
 }
 
 .title {
@@ -29,77 +26,123 @@
   max-width: 500px;
 }
 
+.talentSection h2,
+.constellationSection h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #e0e0ff;
+  text-shadow: 0 0 10px rgba(100, 200, 255, 0.3);
+}
+
 .talentGrid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
+  grid-template-columns: repeat(2, 1fr);
   gap: 1rem;
-  margin-top: 1rem;
+  margin: 1.5rem 0;
 }
 
 .talentCard {
-  background-color: #292944;
-  padding: 1rem;
-  text-align: center;
-  border-radius: 8px;
+  background: linear-gradient(145deg, #22223a, #1a1a2e);
+  padding: 0.8rem;
+  border-radius: 12px;
   cursor: pointer;
-  transition: background-color 0.3s;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
 }
 
-.talentCard:hover {
-  background-color: #3c3c5f;
+.talentCard:hover, .talentCard.active {
+  background: linear-gradient(145deg, #2a3c5a, #1a253a);
+  border-color: rgba(100, 200, 255, 0.8);
+  box-shadow: 0 0 15px rgba(100, 200, 255, 0.3), inset 0 0 10px rgba(100, 200, 255, 0.1);
+  transform: translateY(-2px);
 }
 
-.icon {
-  font-size: 2rem;
+.talentCardIconWrapper {
+  width: 44px;
+  height: 44px;
+  background: rgba(10, 10, 20, 0.6);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(100, 200, 255, 0.3);
+  font-size: 1.4rem;
+  flex-shrink: 0;
 }
 
-.talentDetail,
-.constellationDetail {
-  margin-top: 1rem;
-  background-color: #1a1a2e;
-  padding: 1rem;
-  border-radius: 8px;
+.talentCard p {
+  margin: 0;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #cdd6f4;
+  text-align: left;
+  line-height: 1.2;
 }
 
-.constellationSemiCircle {
+.constellationMap {
   position: relative;
-  width: 300px;
-  height: 150px;
-  margin: 2rem auto;
-  border-radius: 150px 150px 0 0;
-  background: radial-gradient(circle, #2a2a40, #1c1c2c);
+  width: 100%;
+  height: 350px;
+  margin: 1rem auto;
+  border-radius: 12px;
+  background: radial-gradient(ellipse at center, #1b2735 0%, #090a0f 100%);
+  overflow: hidden;
+  box-shadow: inset 0 0 50px rgba(0,0,0,0.5);
+  border: 1px solid rgba(255, 255, 255, 0.05);
 }
 
-.constellationNode {
+.constellationLines {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 48px;
-  height: 48px;
-  background-color: #444466;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.constellationStar {
+  position: absolute;
+  width: 44px;
+  height: 44px;
+  background: rgba(20, 20, 40, 0.9);
+  border: 2px solid rgba(100, 200, 255, 0.3);
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  transform-origin: center;
-  transition: background-color 0.3s, transform 0.2s ease-in-out;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 10px rgba(100, 200, 255, 0.1);
 }
 
-.constellationNode:hover {
-  background-color: #666688;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+.constellationStar:hover, .constellationStar.active {
+  background: rgba(40, 60, 100, 0.9);
+  border-color: rgba(100, 200, 255, 0.9);
+  box-shadow: 0 0 20px rgba(100, 200, 255, 0.5), 0 0 40px rgba(100, 200, 255, 0.3);
+  z-index: 3;
 }
 
-.constellationDetail {
+.starIcon {
+  font-size: 1.2rem;
+}
+
+.constellationDetail,
+.talentDetail {
   margin-top: 1rem;
-  background-color: #1a1a2e;
-  padding: 1rem;
-  border-radius: 8px;
-  color: #f0f0f0;
+  background: rgba(15, 20, 30, 0.8);
+  padding: 1.5rem;
+  border-radius: 12px;
+  border-left: 4px solid rgba(100, 200, 255, 0.6);
+  color: #e0e0ff;
+  backdrop-filter: blur(5px);
 }
 
-.constellationNode span {
-  font-size: 1.8rem;
-}
