@@ -1,0 +1,105 @@
+.container {
+  padding: 2rem;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #1f1f2e, #2e2e4d);
+  color: #fff;
+  min-height: 100vh;
+}
+
+.title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.sections {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.talentSection,
+.constellationSection {
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 1.5rem;
+  border-radius: 12px;
+  flex: 1;
+  min-width: 300px;
+  max-width: 500px;
+}
+
+.talentGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.talentCard {
+  background-color: #292944;
+  padding: 1rem;
+  text-align: center;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.talentCard:hover {
+  background-color: #3c3c5f;
+}
+
+.icon {
+  font-size: 2rem;
+}
+
+.talentDetail,
+.constellationDetail {
+  margin-top: 1rem;
+  background-color: #1a1a2e;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.constellationSemiCircle {
+  position: relative;
+  width: 300px;
+  height: 150px;
+  margin: 2rem auto;
+  border-radius: 150px 150px 0 0;
+  background: radial-gradient(circle, #2a2a40, #1c1c2c);
+}
+
+.constellationNode {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 48px;
+  height: 48px;
+  background-color: #444466;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transform-origin: center;
+  transition: background-color 0.3s, transform 0.2s ease-in-out;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.constellationNode:hover {
+  background-color: #666688;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+.constellationDetail {
+  margin-top: 1rem;
+  background-color: #1a1a2e;
+  padding: 1rem;
+  border-radius: 8px;
+  color: #f0f0f0;
+}
+
+.constellationNode span {
+  font-size: 1.8rem;
+}
