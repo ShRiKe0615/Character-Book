@@ -48,6 +48,7 @@ import GenshinPage from './pages/GenshinPage';
 import HonkaiPage from './pages/HonkaiPage';
 import WutheringPage from './pages/WutheringPage';
 import UtilityPage from './pages/UtilityPage';
+import TalentPage from './pages/TalentPage';
 import './App.css';
 
 /*-------------------- Main App --------------------*/
@@ -100,8 +101,8 @@ const App = () => {
               <div><span></span></div>
             </div>
           </section>
-          <h1>Game Character Card</h1>
-          <p>Characters from OpenWorld RPG!</p>
+          <h1>Astral Archives</h1>
+          <p>The Ultimate Open-World RPG Character Database</p>
           <button onClick={toggleDarkMode} className="theme-toggle-btn">
             {isDarkMode ? "🌙" : "🌞"}
           </button>
@@ -112,6 +113,7 @@ const App = () => {
           <Link to="/HonkaiStarRail" className="nav-link">Honkai Star Rail</Link>
           <Link to="/WutheringWaves" className="nav-link">Wuthering Waves</Link>
           <Link to="/Utility" className="nav-link">Utility</Link>
+          <Link to="/Talent" className="nav-link">Talent</Link>
         </nav>
         
         <Routes>
@@ -120,26 +122,11 @@ const App = () => {
           <Route path="/HonkaiStarRail" element={<HonkaiPage />} />
           <Route path="/WutheringWaves" element={<WutheringPage />} />
           <Route path="/Utility" element={<UtilityPage />} />
+          <Route path="/Talent" element={<TalentPage />} />
         </Routes>
 
         <footer className="footer">
           <p>© 2025 Game Character Card | All rights reserved</p>
-          <div>
-            <svg
-              className="waves" xmlns="http://www.w3.org/2000/svg"
-              xmlnsXlink="http://www.w3.org/1999/xlink"
-              viewBox="0 24 150 28" preserveAspectRatio="none" shapeRendering="auto">
-              <defs>
-                <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"/>
-              </defs>
-              <g className="parallax">
-                <use xlinkHref="#gentle-wave" x="48" y="0" fill="rgba(255,255,100,0.9)" />
-                <use xlinkHref="#gentle-wave" x="48" y="3" fill="rgba(255,100,255,0.7)" />
-                <use xlinkHref="#gentle-wave" x="48" y="5" fill="rgba(100,255,255,0.5)" />
-                <use xlinkHref="#gentle-wave" x="48" y="7" fill="rgba(0, 119, 255, 0.3)" />
-              </g>
-            </svg>
-          </div>
         </footer>
       </div>
     </Router>
