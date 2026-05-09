@@ -107,7 +107,7 @@ const App = () => {
             {isDarkMode ? "🌙" : "🌞"}
           </button>
         </header>
-        
+
         <nav className="navbar">
           <Link to="/GenshinImpact" className="nav-link">Genshin Impact</Link>
           <Link to="/HonkaiStarRail" className="nav-link">Honkai Star Rail</Link>
@@ -115,7 +115,7 @@ const App = () => {
           <Link to="/Utility" className="nav-link">Utility</Link>
           <Link to="/Talent" className="nav-link">Talent</Link>
         </nav>
-        
+
         <Routes>
           <Route path="/" element={<Navigate to="/GenshinImpact" />} />
           <Route path="/GenshinImpact" element={<GenshinPage />} />
@@ -126,7 +126,8 @@ const App = () => {
         </Routes>
 
         <footer className="footer">
-          <p>© 2025 Game Character Card | All rights reserved</p>
+          <p>© 2026 Astral Archives | Developed by Aryan | All rights reserved</p>
+          <p>Disclaimer: Astral Archives is a fan-made, non-commercial project. All character images, names, and game assets belong to their respective owners (miHoYo, HoYoverse, Kuro Games).</p>
         </footer>
       </div>
     </Router>

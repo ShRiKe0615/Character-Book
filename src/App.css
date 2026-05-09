@@ -159,8 +159,6 @@ h2 {
   color: #005c6b;
 }
 
-
-
 .App.light-mode .section,
 .App.light-mode .favorite-game-section,
 .App.light-mode .favorite-item {
@@ -248,7 +246,9 @@ h2 {
 .App.dark-mode #background {
   background-image: url(https://images.unsplash.com/photo-1478760329108-5c3ed9d495a0?q=80&w=2000&auto=format&fit=crop);
   background-color: #050510;
-}.App.dark-mode .section,
+}
+
+.App.dark-mode .section,
 .App.dark-mode .favorite-game-section,
 .App.dark-mode .favorite-item {
   background-color: rgba(30, 35, 50, 0.75);
@@ -281,7 +281,6 @@ h2 {
 .App.dark-mode .footer {
   color: #a0a0b0;
 }
-
 
 /* Light/Dark Mode Button */
 .theme-toggle-btn {
@@ -327,9 +326,7 @@ h2 {
 .favorite-item {
   display: flex;
   justify-content: space-between;
-  /* Aligns the items to the ends */
   align-items: center;
-  /*Vertically centers the content*/
   padding: 10px;
   margin-bottom: 15px;
   border: 1px solid #ddd;
@@ -383,9 +380,6 @@ h2 {
   outline: none;
   background-color: #ffffff;
 }
-
-
-
 
 /*-------------------- Fall Animation --------------------*/
 
