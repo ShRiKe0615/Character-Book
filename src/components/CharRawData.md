@@ -98,6 +98,19 @@ Mavuika	            5 Star	 Pyro	    Claymore	Natlan	  	5.3
 Yumemizuki Mizuki	5 Star	 Anemo	    Catalyst	Inazuma	  	5.4
 Iansan	            4 Star	 Electro	Polearm	    Natlan 	  	5.5
 Varesa	            5 Star	 Electro	Catalyst	Natlan	  	5.5
+Aino	            4 Stars	 Hydro      Claymore    Nod-Krai    Luna I
+Flins               5 Stars	 Electro    Polearm	    Nod-Krai 	Luna I
+Lauma               5 Stars	 Dendro     Catalyst	Nod-Krai    Luna I
+Nefer               5 Stars	 Dendro     Catalyst	Nod-Krai 	Luna II
+Wonderland Manekin  5 Stars	 None	    Sword	    None        Luna II
+Durin               5 Stars	 Pyro       Sword	    Mondstadt   Luna III
+Jahoda              4 Stars	 Anemo      Bow	        Nod-Krai	Luna III
+Columbina           5 Stars  Hydro      Catalyst    Nod-Krai    Luna IV
+Illuga              4 Stars	 Geo        Polearm	    Nod-Krai	Luna IV
+Zibai               5 Stars	 Geo        Sword	    Liyue       Luna IV
+Varka               5 Stars	 Anemo      Claymore	Mondstadt   Luna V
+Linnea              5 Stars	 Geo	    Bow	        Nod-Krai	Luna VI
+
 
 <!-------------------- HONKAI-CHARACTER DATA -------------------->
 
