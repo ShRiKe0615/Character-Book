@@ -228,7 +228,7 @@ const UtilityPage = () => {
     const savedFavorites = JSON.parse(localStorage.getItem('favorites')) || [];
     setFavorites(savedFavorites);
   }, []);
-
+  
   // Remove character from favorites
   const removeFromFavorites = (uniqueID) => {
     const updatedFavorites = favorites.filter(fav => fav !== uniqueID);
