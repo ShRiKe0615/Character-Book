@@ -42,7 +42,7 @@ export default App; */
 /*----------Light-Dark Mode test--------------*/
 /*-------------------- Imports --------------------*/
 
-import { BrowserRouter as Router, Routes, Route, Link, Navigate } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, NavLink, Navigate } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import GenshinPage from './pages/GenshinPage';
 import HonkaiPage from './pages/HonkaiPage';
@@ -55,6 +55,7 @@ import './App.css';
 
 const App = () => {
   const [isDarkMode, setIsDarkMode] = useState(false);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   // Extracting saved preference in mode from localstorage
   useEffect(() => {
@@ -109,11 +110,18 @@ const App = () => {
         </header>
 
         <nav className="navbar">
-          <Link to="/GenshinImpact" className="nav-link">Genshin Impact</Link>
-          <Link to="/HonkaiStarRail" className="nav-link">Honkai Star Rail</Link>
-          <Link to="/WutheringWaves" className="nav-link">Wuthering Waves</Link>
-          <Link to="/Utility" className="nav-link">Utility</Link>
-          <Link to="/Talent" className="nav-link">Talent</Link>
+          <div className="mobile-menu-header">
+            <button className="hamburger" onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}>
+              {isMobileMenuOpen ? "✕" : "☰"}
+            </button>
+          </div>
+          <div className={`nav-links ${isMobileMenuOpen ? 'open' : ''}`}>
+            <NavLink to="/GenshinImpact" className="nav-link" onClick={() => setIsMobileMenuOpen(false)}>Genshin Impact</NavLink>
+            <NavLink to="/HonkaiStarRail" className="nav-link" onClick={() => setIsMobileMenuOpen(false)}>Honkai Star Rail</NavLink>
+            <NavLink to="/WutheringWaves" className="nav-link" onClick={() => setIsMobileMenuOpen(false)}>Wuthering Waves</NavLink>
+            <NavLink to="/Utility" className="nav-link" onClick={() => setIsMobileMenuOpen(false)}>Utility</NavLink>
+            <NavLink to="/Talent" className="nav-link" onClick={() => setIsMobileMenuOpen(false)}>Talent</NavLink>
+          </div>
         </nav>
 
         <Routes>
