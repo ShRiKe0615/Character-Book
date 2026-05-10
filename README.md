@@ -1,5 +1,7 @@
 # Game Character Card Explorer 🌟
 
+🚀 **[View Live Demo](https://https://astral-archives.vercel.app/)** 🚀
+
 A beautifully styled, interactive React web application that serves as a database for characters from modern open-world RPGs. The app allows users to seamlessly navigate through character lists for **Genshin Impact**, **Honkai: Star Rail**, and **Wuthering Waves**, and includes a built-in utility toolkit.
 
 ## Features
