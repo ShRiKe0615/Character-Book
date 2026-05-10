@@ -1,4 +1,5 @@
-import React, { useState, useMemo } from "react";
+import React, { useState, useMemo, useEffect } from "react";
+import { useLocation } from "react-router-dom";
 
 import styles from "./talent.module.css";
 import { GenshinCharacters } from "./Genshindata";
@@ -37,6 +38,13 @@ const CharacterTalentCard = ({ character }) => {
   const [isOpen, setIsOpen] = useState(false);
   const [selectedTalent, setSelectedTalent] = useState(null);
   const [activeConstellation, setActiveConstellation] = useState(null);
+  const location = useLocation();
+
+  useEffect(() => {
+    if (location.state && location.state.characterName === character.name) {
+      setIsOpen(true);
+    }
+  }, [location.state, character.name]);
 
   return (
     <div style={{ marginBottom: "1rem", backgroundColor: "rgba(128, 128, 128, 0.1)", borderRadius: "12px", padding: "1rem", border: "1px solid rgba(128, 128, 128, 0.2)", backdropFilter: "blur(5px)" }}>
@@ -89,10 +97,6 @@ const CharacterTalentCard = ({ character }) => {
                   <p>{selectedTalent.description}</p>
                 </div>
               )}
-              <div className={styles.talentDetail}>
-                <h3>PASSIVE</h3>
-                <p>{character.passive}</p>
-              </div>
             </div>
 
             {/* Constellation Section */}
@@ -167,8 +171,16 @@ const CharacterTalentCard = ({ character }) => {
 };
 
 const TalentPage = () => {
+  const location = useLocation();
   const [searchTerm, setSearchTerm] = useState("");
   const [selectedGame, setSelectedGame] = useState("Genshin Impact");
+
+  useEffect(() => {
+    if (location.state && location.state.characterName && location.state.game) {
+      setSearchTerm(location.state.characterName);
+      setSelectedGame(location.state.game);
+    }
+  }, [location.state]);
 
   const games = ["Genshin Impact", "Honkai Star Rail", "Wuthering Waves"];
 
