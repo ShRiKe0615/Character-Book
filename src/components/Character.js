@@ -47,6 +47,7 @@ export default Character; */
 /*-------------------- Imports --------------------*/
 
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { GenshinCharacters } from '../pages/Genshindata';
 import { HonkaiStarRailCharacters } from '../pages/Honkaidata';
 import { WutheringWavesCharacters } from '../pages/Wutheringdata';
@@ -67,6 +68,12 @@ export const GiCharacter = ({ id, gameID=1 }) => {
   const { isFavorite, toggleFavorite } = useFavorite(gameID,id);
   const character = GenshinCharacters[id];
   const handleFlip = () => setIsFlipped(prev => !prev);
+  const navigate = useNavigate();
+
+  const handleViewTalent = (e) => {
+    e.stopPropagation();
+    navigate('/Talent', { state: { characterName: character.name, game: 'Genshin Impact' } });
+  };
 
   // // const unqkey = '${gameID}${id}' //unique key to identify each character
   // // Check if the character is already in favorites on mount
@@ -118,6 +125,7 @@ export const GiCharacter = ({ id, gameID=1 }) => {
             <p>Weapon: {character.weapon}</p>
             <p>Version: {character.version}</p>
             <p>{character.description}</p>
+            <button className="teleport-btn" onClick={handleViewTalent}>View Talents ➜</button>
           </div>
         </div>
 
@@ -134,6 +142,12 @@ export const HsrCharacter = ({ id, gameID=2 }) => {
   const { isFavorite, toggleFavorite } = useFavorite(gameID,id);
   const character = HonkaiStarRailCharacters[id];
   const handleFlip = () => setIsFlipped(prev => !prev);
+  const navigate = useNavigate();
+
+  const handleViewTalent = (e) => {
+    e.stopPropagation();
+    navigate('/Talent', { state: { characterName: character.name, game: 'Honkai Star Rail' } });
+  };
 
   return (
     <div className="card-container" onClick={handleFlip}>
@@ -158,6 +172,7 @@ export const HsrCharacter = ({ id, gameID=2 }) => {
             <p>Weapon: {character.weapon}</p>
             <p>Version: {character.version}</p>
             <p>{character.description}</p>
+            <button className="teleport-btn" onClick={handleViewTalent}>View Talents ➜</button>
           </div>
         </div>
 
@@ -173,6 +188,12 @@ export const WuwaCharacter = ({ id, gameID=3 }) => {
   const { isFavorite, toggleFavorite } = useFavorite(gameID,id);
   const character = WutheringWavesCharacters[id];
   const handleFlip = () => setIsFlipped(prev => !prev);
+  const navigate = useNavigate();
+
+  const handleViewTalent = (e) => {
+    e.stopPropagation();
+    navigate('/Talent', { state: { characterName: character.name, game: 'Wuthering Waves' } });
+  };
 
   return (
     <div className="card-container" onClick={handleFlip}>
@@ -197,6 +218,7 @@ export const WuwaCharacter = ({ id, gameID=3 }) => {
             <p>Version: {character.version}</p>
             <p>Faction: {character.faction}</p>
             <p>{character.description}</p>
+            <button className="teleport-btn" onClick={handleViewTalent}>View Talents ➜</button>
           </div>
         </div>
 
