@@ -9,8 +9,35 @@ const HonkaiStarRailCharacters = {
     path: "Destruction",
     type: "Lightning",
     world: "",
-    description: "Description Coming Soon",
     image: SpecialPassImg,
+    abilities: [
+      { id: 1, name: "Lightning Rush",
+        description: "Deals Lightning DMG equal to 50%–110% of Arlan's ATK to a single enemy."},
+      { id: 2, name: "Shackle Breaker",
+        description: "Consumes HP equal to 15% of Arlan's Max HP to deal Lightning DMG equal to 120%–264% of Arlan's ATK to a single enemy. If Arlan does not have sufficient HP, his HP is reduced to 1 after using the Skill. This Skill does not consume Skill Points."},
+      { id: 3, name: "Frenzied Punishment",
+        description: "Deals Lightning DMG equal to 192%–345.6% of Arlan's ATK to a target enemy and Lightning DMG equal to 96%–172.8% of Arlan's ATK to adjacent enemies."},
+      { id: 4, name: "Pain and Anger",
+        description: "Based on Arlan's current missing HP percentage, gains a DMG bonus, up to a maximum increase of 36%–79.2% DMG dealt."},
+      { id: 5, name: "Swift Harvest",
+        description: "Immediately attacks the enemy. After entering battle, deals Lightning DMG equal to 80% of Arlan's ATK to all enemies."},
+      { id: 6, name: "Revival",
+        description: "After defeating an enemy, immediately restores Arlan's HP by a percentage of his Max HP."}
+    ],
+    eidolons: [
+      { id: 1, name: "To the Bitter End",
+        description: "When HP percentage is lower than or equal to 50% of Max HP, increases Skill DMG by 10%."},
+      { id: 2, name: "Breaking Free",
+        description: "Using Skill or Ultimate removes 1 debuff from Arlan."},
+      { id: 3, name: "Power Through",
+        description: "Skill Lv. +2 (up to Lv. 15) and Basic ATK Lv. +1 (up to Lv. 10)."},
+      { id: 4, name: "Turn the Tables",
+        description: "When struck by a killing blow after entering battle, instead of being knocked down, Arlan restores HP equal to 25% of his Max HP. This effect can trigger once and expires after 2 turns."},
+      { id: 5, name: "Hammer and Tongs",
+        description: "Ultimate Lv. +2 (up to Lv. 15) and Talent Lv. +2 (up to Lv. 15)."},
+      { id: 6, name: "Self-Sacrifice",
+        description: "When HP is 50% or lower, Ultimate deals 20% more DMG, and the DMG multiplier for adjacent targets becomes equal to that of the primary target."}
+    ]
   },
   "2" : {
     name:  "Asta",
@@ -20,8 +47,35 @@ const HonkaiStarRailCharacters = {
     path: "Harmony",
     type: "Fire",
     world: "",
-    description: "Description Coming Soon",
     image: SpecialPassImg,
+    abilities: [
+      { id: 1, name: "Spectrum Beam",
+        description: "Deals Fire DMG equal to 50%–110% of Asta's ATK to a single enemy."},
+      { id: 2, name: "Meteor Storm",
+        description: "Deals Fire DMG equal to 25%–55% of Asta's ATK to a single enemy and further deals DMG 4 extra times, with each time dealing Fire DMG equal to 25%–55% of Asta's ATK to a random enemy."},
+      { id: 3, name: "Astral Blessing",
+        description: "Increases SPD of all allies by 36–52.8 for 2 turn(s)."},
+      { id: 4, name: "Astrometry",
+        description: "Gains 1 stack of Charging for every different enemy hit by Asta plus an extra stack if the enemy hit has Fire Weakness. For every stack of Charging Asta has, all allies' ATK increases by 7%–15.4%, up to 5 time(s). Starting from her second turn, Asta's Charging stack count is reduced by 3 at the beginning of every turn."},
+      { id: 5, name: "Miracle Flash",
+        description: "Immediately attacks the enemy. After entering battle, deals Fire DMG equal to 50% of Asta's ATK to all enemies."},
+      { id: 6, name: "Ignite",
+        description: "When using Basic ATK, there is a fixed chance to inflict Burn on the target for 3 turn(s). Burned enemies take Fire DoT at the start of each turn."}
+    ],
+    eidolons: [
+      { id: 1, name: "Star Sings Sans Verses or Vocals",
+        description: "When using Skill, deals DMG for 1 extra time to a random enemy."},
+      { id: 2, name: "Moon Speaks in Wax and Wane",
+        description: "After using her Ultimate, Asta's Charging stacks will not be reduced in the next turn."},
+      { id: 3, name: "Meteor Showers for Wish and Want",
+        description: "Skill Lv. +2, up to a maximum of Lv. 15. Talent Lv. +2, up to a maximum of Lv. 15."},
+      { id: 4, name: "Aurora Basks in Beauty and Bliss",
+        description: "Asta's Energy Regeneration Rate increases by 15% when she has 2 or more Charging stacks."},
+      { id: 5, name: "Nebula Secludes in Runes and Riddles",
+        description: "Ultimate Lv. +2, up to a maximum of Lv. 15. Basic ATK Lv. +1, up to a maximum of Lv. 10."},
+      { id: 6, name: "Cosmos Dreams in Calm and Comfort",
+        description: "Charging stack(s) lost in each turn is reduced by 1."}
+    ]
   },
   "3" : {
     name:  "Bailu",
@@ -31,8 +85,35 @@ const HonkaiStarRailCharacters = {
     path: "Abundance",
     type: "Lightning",
     world: "",
-    description: "Description Coming Soon",
     image: SpecialPassImg,
+    abilities: [
+  { id: 1, name: "Diagnostic Kick",
+    description: "Deals Lightning DMG equal to 50%–110% of Bailu's ATK to a single enemy."},
+  { id: 2, name: "Singing Among Clouds",
+    description: "Heals a single ally for 7.8%–12.48% of Bailu's Max HP plus 78–347.1. Bailu then heals random allies 2 time(s). After each healing, HP restored from the next healing is reduced by 15%."},
+  { id: 3, name: "Felicitous Thunderleap",
+    description: "Heals all allies for 9%–14.4% of Bailu's Max HP plus 90–400.5. Bailu applies Invigoration to allies that are not already Invigorated. For those already Invigorated, Bailu extends the duration of their Invigoration by 1 turn. The effect of Invigoration can last for 2 turn(s) and cannot stack."},
+  { id: 4, name: "Gourdful of Elixir",
+    description: "After an ally target with Invigoration is hit, restores the ally's HP for 3.6%–5.8% of Bailu's Max HP plus 36–160.2. This effect can trigger 2 time(s). When Bailu's teammate receives a killing blow, they will not be knocked down. Bailu immediately heals the ally for 12%–19.2% of Bailu's Max HP plus 120–534 HP. This effect can be triggered 1 time per battle."},
+  { id: 5, name: "Saunter in the Rain",
+    description: "After Technique is used, at the start of the next battle, all allies are granted Invigoration for 2 turn(s)."},
+  { id: 6, name: "Qihuang Analects",
+    description: "When Bailu heals allies above their Max HP, the excess healing is converted into a shield that lasts for 2 turn(s)."}
+],
+eidolons: [
+  { id: 1, name: "Ambrosial Aqua",
+    description: "If the target ally's current HP is equal to their Max HP when Invigoration ends, regenerates 8 extra Energy for this target."},
+  { id: 2, name: "Sylphic Slumber",
+    description: "After using her Ultimate, Bailu's Outgoing Healing increases by an additional 15% for 2 turn(s)."},
+  { id: 3, name: "Omniscient Opulence",
+    description: "Skill Lv. +2, up to a maximum of Lv. 15. Talent Lv. +2, up to a maximum of Lv. 15."},
+  { id: 4, name: "Evil Excision",
+    description: "Every healing provided by the Skill makes the recipient deal 10% more DMG for 2 turn(s). This effect can stack up to 3 time(s)."},
+  { id: 5, name: "Waning Worries",
+    description: "Ultimate Lv. +2, up to a maximum of Lv. 15. Basic ATK Lv. +1, up to a maximum of Lv. 10."},
+  { id: 6, name: "Drooling Drop of Draconic Divinity",
+    description: "Bailu can heal allies who received a killing blow 1 more time(s) in a single battle."}
+]
   },
   "4" : {
     name:  "Bronya",
@@ -42,8 +123,35 @@ const HonkaiStarRailCharacters = {
     path: "Harmony",
     type: "Wind",
     world: "",
-    description: "Description Coming Soon",
     image: SpecialPassImg,
+    abilities: [
+  { id: 1, name: "Windrider Bullet",
+    description: "Deals Wind DMG equal to 50%–110% of Bronya's ATK to a single enemy."},
+  { id: 2, name: "Combat Redeployment",
+    description: "Dispels a debuff from a single ally, allows them to immediately take action, and increases their DMG by 33%–72.6% for 1 turn(s). When this Skill is used on Bronya herself, she cannot immediately take action again."},
+  { id: 3, name: "The Belobog March",
+    description: "Increases the ATK of all allies by 33%–59.4%, and increases their CRIT DMG equal to 12%–16.8% of Bronya's CRIT DMG plus 12%–21.6% for 2 turn(s)."},
+  { id: 4, name: "Leading the Way",
+    description: "After using her Basic ATK, Bronya's next action will be Advanced Forward by 15%–33%."},
+  { id: 5, name: "Banner of Command",
+    description: "After using Bronya's Technique, at the start of the next battle, all allies' ATK increases by 15% for 2 turn(s)."},
+  { id: 6, name: "Command",
+    description: "After using Skill, the target ally's CRIT Rate increases for 1 turn."}
+],
+eidolons: [
+  { id: 1, name: "Hone Your Strength",
+    description: "When using Skill, there is a 50% fixed chance of recovering 1 Skill Point. This effect has a 1-turn cooldown."},
+  { id: 2, name: "Quick March",
+    description: "When using Skill, the target ally's SPD increases by 30% after taking action, lasting for 1 turn."},
+  { id: 3, name: "Bombardment",
+    description: "Ultimate Lv. +2, up to a maximum of Lv. 15. Talent Lv. +2, up to a maximum of Lv. 15."},
+  { id: 4, name: "Take by Surprise",
+    description: "After any other ally character uses Basic ATK on an enemy target that has Wind Weakness, Bronya immediately launches 1 Follow-up ATK, dealing Wind DMG equal to 80% of her Basic ATK DMG. This effect can only trigger once per turn."},
+  { id: 5, name: "Unstoppable",
+    description: "Skill Lv. +2, up to a maximum of Lv. 15. Basic ATK Lv. +1, up to a maximum of Lv. 10."},
+  { id: 6, name: "Piercing Rainbow",
+    description: "The duration of the DMG Boost effect placed by the Skill on the target ally increases by 1 turn(s)."}
+]
   },
   "5" : {
     name:  "Clara",
@@ -53,8 +161,35 @@ const HonkaiStarRailCharacters = {
     path: "Destruction",
     type: "Physical",
     world: "",
-    description: "Description Coming Soon",
     image: SpecialPassImg,
+    abilities: [
+  { id: 1, name: "I Want to Help",
+    description: "Deals Physical DMG equal to 50%–110% of Clara's ATK to a single enemy."},
+  { id: 2, name: "Svarog Watches Over You",
+    description: "Deals Physical DMG equal to 60%–132% of Clara's ATK to all enemies. Additionally, deals extra Physical DMG equal to 60%–132% of Clara's ATK to enemies marked with a Mark of Counter."},
+  { id: 3, name: "Promise, Not Command",
+    description: "Reduces DMG taken by Clara by 25%–32.5% and greatly increases the chance that enemies attack Clara for 2 turn(s). In addition, Svarog's Counter is enhanced, increasing DMG and dealing damage to adjacent enemies. Enhanced Counters can trigger a limited number of times."},
+  { id: 4, name: "Because We're Family",
+    description: "Under the protection of Svarog, DMG taken by Clara is reduced. After Clara is attacked, Svarog marks the attacker with a Mark of Counter and immediately launches a Counter, dealing Physical DMG based on Clara's ATK."},
+  { id: 5, name: "Small Price for Victory",
+    description: "Immediately attacks the enemy. After entering battle, the chance Clara will be attacked by enemies increases for 2 turn(s)."},
+  { id: 6, name: "Revenge",
+    description: "Increases Svarog's Counter DMG by 30%."}
+],
+eidolons: [
+  { id: 1, name: "A Tall Figure",
+    description: "Using Skill will not remove Mark of Counter on the enemy."},
+  { id: 2, name: "A Tight Embrace",
+    description: "After using the Ultimate, ATK increases by 30% for 2 turn(s)."},
+  { id: 3, name: "Cold Steel Armor",
+    description: "Skill Lv. +2, up to a maximum of Lv. 15. Basic ATK Lv. +1, up to a maximum of Lv. 10."},
+  { id: 4, name: "Family's Warmth",
+    description: "After Clara is hit, the DMG taken by Clara is reduced by 30%. This effect lasts until the start of her next turn."},
+  { id: 5, name: "A Small Promise",
+    description: "Ultimate Lv. +2, up to a maximum of Lv. 15. Talent Lv. +2, up to a maximum of Lv. 15."},
+  { id: 6, name: "Long Company",
+    description: "After other allies are hit, Svarog also has a 50% fixed chance to trigger a Counter on the attacker and mark them with a Mark of Counter. When using Clara's Ultimate, the number of Enhanced Counters increases by 1."}
+]
   },
   "6" : {
     name:  "Dan Heng",
@@ -64,8 +199,35 @@ const HonkaiStarRailCharacters = {
     path: "The Hunt",
     type: "Wind",
     world: "",
-    description: "Description Coming Soon",
     image: SpecialPassImg,
+    abilities: [
+  { id: 1, name: "Cloudlancer Art: North Wind",
+    description: "Deals Wind DMG equal to 50%–110% of Dan Heng's ATK to a single enemy."},
+  { id: 2, name: "Cloudlancer Art: Torrent",
+    description: "Deals Wind DMG equal to 130%–286% of Dan Heng's ATK to a single enemy. When DMG dealt by Skill triggers a CRIT Hit, there is a 100% base chance to reduce the target's SPD by 12% for 2 turn(s)."},
+  { id: 3, name: "Ethereal Dream",
+    description: "Deals Wind DMG equal to 240%–432% of Dan Heng's ATK to a single target enemy. If the attacked enemy is Slowed, the multiplier for the DMG dealt by Ultimate increases by 72%–129.6%."},
+  { id: 4, name: "Superiority of Reach",
+    description: "When Dan Heng becomes the target of an ally's ability, his next attack's Wind RES PEN increases by 18%–39.6%. This effect can be triggered again after 2 turn(s)."},
+  { id: 5, name: "Splitting Spearhead",
+    description: "After Dan Heng uses his Technique, his ATK increases by 40% at the start of the next battle for 3 turn(s)."},
+  { id: 6, name: "Hidden Dragon",
+    description: "When current HP percentage is 50% or lower, the chance of being targeted by enemies is reduced."}
+],
+eidolons: [
+  { id: 1, name: "The Higher You Fly, the Harder You Fall",
+    description: "When the target enemy's current HP percentage is greater than or equal to 50%, CRIT Rate increases by 12%."},
+  { id: 2, name: "Quell the Venom Octet, Quench the Vice O'Flame",
+    description: "Reduces Talent cooldown by 1 turn."},
+  { id: 3, name: "Seen and Unseen",
+    description: "Skill Lv. +2, up to a maximum of Lv. 15. Basic ATK Lv. +1, up to a maximum of Lv. 10."},
+  { id: 4, name: "Roaring Dragon and Soaring Sun",
+    description: "When Dan Heng uses his Ultimate to defeat an enemy, he will immediately take action again."},
+  { id: 5, name: "A Drop of Rain Feeds a Torrent",
+    description: "Ultimate Lv. +2, up to a maximum of Lv. 15. Talent Lv. +2, up to a maximum of Lv. 15."},
+  { id: 6, name: "The Troubled Soul Lies in Wait",
+    description: "The Slow state triggered by Skill reduces the enemy's SPD by an extra 8%."}
+]
   },
    "7" : {
     name:  "Gepard",
@@ -75,8 +237,35 @@ const HonkaiStarRailCharacters = {
     path: "Preservation",
     type: "Ice",
     world: "",
-    description: "Description Coming Soon",
     image: SpecialPassImg,
+    abilities: [
+  { id: 1, name: "Fist of Conviction",
+    description: "Deals Ice DMG equal to 50%–110% of Gepard's ATK to a single enemy."},
+  { id: 2, name: "Daunting Smite",
+    description: "Deals Ice DMG equal to 100%–220% of Gepard's ATK to a single enemy, with a 65% base chance to Freeze the enemy for 1 turn. While Frozen, the enemy cannot take action and takes Ice Additional DMG equal to 30%–66% of Gepard's ATK at the beginning of each turn."},
+  { id: 3, name: "Enduring Bulwark",
+    description: "Applies a Shield to all allies, absorbing DMG equal to 30%–48% of Gepard's DEF plus 150–667.5 for 3 turns."},
+  { id: 4, name: "Unyielding Will",
+    description: "When struck with a killing blow, instead of being knocked down, Gepard immediately restores HP equal to 25%–55% of his Max HP. This effect can only trigger once per battle."},
+  { id: 5, name: "Comradery",
+    description: "After Gepard uses his Technique, when the next battle begins, a Shield is applied to all allies, absorbing DMG equal to 24% of Gepard's DEF plus 150 for 2 turns."},
+  { id: 6, name: "Integrity",
+    description: "Gepard's chance to be attacked by enemies increases."}
+],
+eidolons: [
+  { id: 1, name: "Due Diligence",
+    description: "When using Skill, increases the base chance to Freeze the attacked target enemy by 35%."},
+  { id: 2, name: "Lingering Cold",
+    description: "After an enemy Frozen by Skill is unfrozen, their SPD is reduced by 20% for 1 turn."},
+  { id: 3, name: "Never Surrender",
+    description: "Ultimate Lv. +2, up to a maximum of Lv. 15. Talent Lv. +2, up to a maximum of Lv. 15."},
+  { id: 4, name: "Faith Moves Mountains",
+    description: "When Gepard is in battle, all allies' Effect RES increases by 20%."},
+  { id: 5, name: "Cold Iron Fist",
+    description: "Skill Lv. +2, up to a maximum of Lv. 15. Basic ATK Lv. +1, up to a maximum of Lv. 10."},
+  { id: 6, name: "Unyielding Resolve",
+    description: "When his Talent is triggered, Gepard immediately takes action and restores extra HP equal to 50% of his Max HP."}
+]
   },
    "8" : {
     name:  "Herta",
@@ -86,8 +275,35 @@ const HonkaiStarRailCharacters = {
     path: "Erudition",
     type: "Ice",
     world: "",
-    description: "Description Coming Soon",
     image: SpecialPassImg,
+    abilities: [
+  { id: 1, name: "What Are You Looking At?",
+    description: "Deals Ice DMG equal to 50%–110% of Herta's ATK to a single enemy."},
+  { id: 2, name: "One-Time Offer",
+    description: "Deals Ice DMG equal to 50%–110% of Herta's ATK to all enemies. If the enemy's HP percentage is 50% or higher, DMG dealt to that enemy increases."},
+  { id: 3, name: "It's Magic, I Added Some Magic",
+    description: "Deals Ice DMG equal to 120%–216% of Herta's ATK to all enemies."},
+  { id: 4, name: "Fine, I'll Do It Myself",
+    description: "When an ally's attack causes an enemy's HP percentage to fall to 50% or lower, Herta launches a Follow-up ATK, dealing Ice DMG equal to 25%–43.75% of her ATK to all enemies."},
+  { id: 5, name: "It Can Still Be Optimized",
+    description: "After using Technique, Herta's ATK increases at the beginning of the next battle for 3 turn(s)."},
+  { id: 6, name: "Efficiency",
+    description: "When Skill is used, DMG dealt to enemies with 50% or higher HP increases further."}
+],
+eidolons: [
+  { id: 1, name: "Kick You When You're Down",
+    description: "If the target enemy's HP percentage is 50% or lower, Basic ATK deals additional Ice DMG equal to 40% of Herta's ATK."},
+  { id: 2, name: "Keep the Ball Rolling",
+    description: "Every time Talent is triggered, this character's CRIT Rate increases by 3%, stacking up to 5 time(s)."},
+  { id: 3, name: "That's the Kind of Girl I Am",
+    description: "Ultimate Lv. +2, up to a maximum of Lv. 15. Basic ATK Lv. +1, up to a maximum of Lv. 10."},
+  { id: 4, name: "Hit Where It Hurts",
+    description: "Talent's Follow-up ATK DMG increases by 10%."},
+  { id: 5, name: "Cuss Big or Cuss Nothing",
+    description: "Skill Lv. +2, up to a maximum of Lv. 15. Talent Lv. +2, up to a maximum of Lv. 15."},
+  { id: 6, name: "No One Can Betray Me",
+    description: "After using Ultimate, ATK increases by 25% for 1 turn(s)."}
+]
   },
    "9" : {
     name:  "Himeko",
@@ -97,8 +313,35 @@ const HonkaiStarRailCharacters = {
     path: "Erudition",
     type: "Fire",
     world: "",
-    description: "Description Coming Soon",
     image: SpecialPassImg,
+    abilities: [
+  { id: 1, name: "Sawblade Tuning",
+    description: "Deals Fire DMG equal to 50%–110% of Himeko's ATK to a single enemy."},
+  { id: 2, name: "Molten Detonation",
+    description: "Deals Fire DMG equal to 100%–220% of Himeko's ATK to a single enemy and Fire DMG equal to 40%–88% of Himeko's ATK to adjacent enemies."},
+  { id: 3, name: "Heavenly Flare",
+    description: "Deals Fire DMG equal to 138%–248.4% of Himeko's ATK to all enemies. For each enemy defeated, Himeko regenerates 5 extra Energy."},
+  { id: 4, name: "Victory Rush",
+    description: "When an enemy is inflicted with Weakness Break, Himeko gains 1 Charge (max 3). When Charge is full and an ally attacks, Himeko launches a follow-up attack dealing Fire DMG equal to 70%–154% of her ATK to all enemies and consumes all Charge."},
+  { id: 5, name: "Incomplete Combustion",
+    description: "After using Technique, creates a field that increases Fire DMG taken by enemies by 10% for 2 turns after entering battle."},
+  { id: 6, name: "Benchmark",
+    description: "When using Skill, deals increased DMG to enemies with HP percentage of 50% or higher."}
+],
+eidolons: [
+  { id: 1, name: "Childhood",
+    description: "After Victory Rush is triggered, increases Himeko's SPD by 20% for 2 turns."},
+  { id: 2, name: "Convergence",
+    description: "Deals 15% more DMG to enemies with HP at 50% or lower."},
+  { id: 3, name: "Poised",
+    description: "Skill Lv. +2 (up to Lv. 15) and Basic ATK Lv. +1 (up to Lv. 10)."},
+  { id: 4, name: "Dedication",
+    description: "When Skill inflicts Weakness Break on an enemy, gains 1 extra Charge."},
+  { id: 5, name: "Aspiration",
+    description: "Ultimate Lv. +2 (up to Lv. 15) and Talent Lv. +2 (up to Lv. 15)."},
+  { id: 6, name: "Trailblaze!",
+    description: "Ultimate deals 2 additional instances of Fire DMG, each equal to 40% of original damage to random enemies."}
+]
   },
    "10" : {
     name:  "Hook",
@@ -108,8 +351,35 @@ const HonkaiStarRailCharacters = {
     path: "Destruction",
     type: "Fire",
     world: "",
-    description: "Description Coming Soon",
     image: SpecialPassImg,
+    abilities: [
+  { id: 1, name: "Hehe! Don't Get Burned!",
+    description: "Deals Fire DMG equal to 50%–110% of Hook's ATK to a single enemy."},
+  { id: 2, name: "Hey! Remember Hook?",
+    description: "Deals Fire DMG equal to 120%–264% of Hook's ATK to a single enemy. Has a 100% base chance to inflict Burn for 2 turn(s), dealing Fire DoT equal to 25%–71.5% of Hook's ATK at the start of each turn."},
+  { id: 3, name: "Boom! Here Comes the Fire!",
+    description: "Deals Fire DMG equal to 240%–432% of Hook's ATK to a single enemy. After using Ultimate, the next Skill becomes Enhanced, dealing Blast DMG to the target and adjacent enemies."},
+  { id: 4, name: "Ha! Oil to the Flames!",
+    description: "When attacking a target afflicted with Burn, deals additional Fire DMG equal to 50%–110% of Hook's ATK and regenerates extra Energy."},
+  { id: 5, name: "Ack! Look at This Mess!",
+    description: "Immediately attacks the enemy. After entering battle, Hook deals Fire DMG equal to 50% of her ATK to a random enemy and has a 100% base chance to inflict Burn on all enemies for 3 turn(s)."},
+  { id: 6, name: "Talent (Hook)",
+    description: "When Hook triggers Burn damage effects, she deals additional Fire DMG and gains extra Energy regeneration."}
+],
+eidolons: [
+  { id: 1, name: "Early to Bed, Early to Rise",
+    description: "Enhanced Skill deals 20% increased DMG."},
+  { id: 2, name: "Happy Tummy, Happy Body",
+    description: "Extends the duration of Burn caused by Skill by 1 turn."},
+  { id: 3, name: "Don't Be Picky, Nothing's Icky",
+    description: "Skill Lv. +2 (up to Lv. 15), Basic ATK Lv. +1 (up to Lv. 10)."},
+  { id: 4, name: "It's Okay to Not Know",
+    description: "When Talent triggers, there is a 100% base chance to Burn adjacent enemies."},
+  { id: 5, name: "Let the Moles' Deeds Be Known",
+    description: "Ultimate Lv. +2 (up to Lv. 15), Talent Lv. +2 (up to Lv. 15)."},
+  { id: 6, name: "Always Ready to Punch and Kick",
+    description: "Hook deals 20% more DMG to enemies afflicted with Burn."}
+]
   },
    "11" : {
     name:  "Jing Yuan",
@@ -119,8 +389,35 @@ const HonkaiStarRailCharacters = {
     path: "Erudition",
     type: "Lightning",
     world: "",
-    description: "Description Coming Soon",
     image: SpecialPassImg,
+    abilities: [
+  { id: 1, name: "Glistening Light",
+    description: "Deals Lightning DMG equal to 50%–110% of Jing Yuan's ATK to a single enemy."},
+  { id: 2, name: "Rifting Zenith",
+    description: "Deals Lightning DMG to all enemies and increases Lightning-Lord's hit count in the next turn."},
+  { id: 3, name: "Lightbringer",
+    description: "Deals massive Lightning DMG to all enemies. Increases the number of hits performed by Lightning-Lord in the next turn."},
+  { id: 4, name: "Prana Extirpated",
+    description: "Lightning-Lord's actions deal increased DMG and ignore a portion of enemy DEF. Stacks effects that enhance Lightning-Lord’s follow-up attacks."},
+  { id: 5, name: "Soaring Thunder",
+    description: "After using Technique, Jing Yuan gains a DMG boost at the start of the next battle."},
+  { id: 6, name: "Command of Thunder",
+    description: "When Lightning-Lord acts, its attacks gain increased CRIT DMG based on Jing Yuan's stats."}
+],
+eidolons: [
+  { id: 1, name: "Slash and Burn",
+    description: "Increases DMG dealt to enemies adjacent to the primary target of Lightning-Lord’s attack."},
+  { id: 2, name: "On the Brink",
+    description: "When Lightning-Lord attacks, Jing Yuan regenerates Energy."},
+  { id: 3, name: "Stratagem",
+    description: "Skill Lv. +2 (up to Lv. 15) and Basic ATK Lv. +1 (up to Lv. 10)."},
+  { id: 4, name: "Raging Waves",
+    description: "After Lightning-Lord attacks, Jing Yuan's SPD increases for 2 turns."},
+  { id: 5, name: "Before Dawn",
+    description: "Ultimate Lv. +2 (up to Lv. 15) and Talent Lv. +2 (up to Lv. 15)."},
+  { id: 6, name: "War Marshal",
+    description: "Lightning-Lord gains increased CRIT DMG and can act more effectively in combat, enhancing follow-up attack performance."}
+]
   },
    "12" : {
     name:  "March 7th",
@@ -130,8 +427,35 @@ const HonkaiStarRailCharacters = {
     path: "Preservation",
     type: "Ice",
     world: "",
-    description: "Description Coming Soon",
     image: SpecialPassImg,
+    abilities: [
+  { id: 1, name: "Frigid Cold Arrow",
+    description: "Deals Ice DMG equal to 50%–110% of March 7th's ATK to a single enemy."},
+  { id: 2, name: "The Power of Cuteness",
+    description: "Applies a Shield to a single ally, absorbing DMG equal to 30%–38% of March 7th's DEF plus 150–768 for 3 turn(s). Has a chance to increase the target's chance of being attacked."},
+  { id: 3, name: "Glacial Cascade",
+    description: "Deals Ice DMG equal to 120%–240% of March 7th's ATK to all enemies, with a 50%–65% base chance to Freeze enemies for 1 turn."},
+  { id: 4, name: "Girl Power",
+    description: "When an ally with a Shield is attacked, March 7th launches a Counter, dealing Ice DMG equal to 25%–75% of her ATK to the attacker."},
+  { id: 5, name: "Memory of You",
+    description: "After using Technique, at the start of the next battle, a Shield is applied to the ally with the lowest HP percentage, absorbing DMG."},
+  { id: 6, name: "Six-Phased Ice",
+    description: "Increases the Effect Hit Rate of March 7th's Ultimate, improving the chance to Freeze enemies."}
+],
+eidolons: [
+  { id: 1, name: "Memory of You",
+    description: "Increases the duration of Shields granted by Skill."},
+  { id: 2, name: "Autumn in Ama's Embrace",
+    description: "When an ally with a Shield is attacked, restores Energy to March 7th."},
+  { id: 3, name: "The Power of Cuteness",
+    description: "Skill Lv. +2, up to a maximum of Lv. 15. Talent Lv. +2, up to a maximum of Lv. 15."},
+  { id: 4, name: "Harder Than a Diamond",
+    description: "When Shielded allies are attacked, increases March 7th's DEF for 2 turn(s)."},
+  { id: 5, name: "Purify, Ashes to Ashes",
+    description: "Ultimate Lv. +2, up to a maximum of Lv. 15. Basic ATK Lv. +1, up to a maximum of Lv. 10."},
+  { id: 6, name: "Girl Power",
+    description: "Increases the DMG of Counter attacks and improves Freeze effect from Ultimate."}
+]
   },
    "13" : {
     name:  "Natasha",
@@ -141,8 +465,35 @@ const HonkaiStarRailCharacters = {
     path: "Abundance",
     type: "Physical",
     world: "",
-    description: "Description Coming Soon",
     image: SpecialPassImg,
+    abilities: [
+  { id: 1, name: "Behind the Kindness",
+    description: "Deals Physical DMG equal to 50%–110% of Natasha's ATK to a single enemy."},
+  { id: 2, name: "Love, Heal and Choose",
+    description: "Restores a single ally for 7%–11.2% of Natasha's Max HP plus 70–312. Also applies continuous healing, restoring HP at the start of each turn."},
+  { id: 3, name: "Gift of Rebirth",
+    description: "Heals all allies for 9%–15% of Natasha's Max HP plus 90–396. Additionally increases healing received for a short duration."},
+  { id: 4, name: "Innervation",
+    description: "Natasha's healing is increased, and allies healed receive additional effects based on their HP percentage."},
+  { id: 5, name: "Hypnosis Research",
+    description: "After using Technique, inflicts a debuff on enemies at the start of battle, reducing their damage output."},
+  { id: 6, name: "Medical Support",
+    description: "Enhances Natasha’s healing effects and improves her ability to cleanse or sustain allies under low HP conditions."}
+],
+eidolons: [
+  { id: 1, name: "Pharmacology Expertise",
+    description: "When Natasha is attacked and her HP is 30% or lower, she immediately heals herself for 15% of Max HP plus a fixed amount (once per battle)."},
+  { id: 2, name: "Clinical Research",
+    description: "Using Ultimate grants continuous healing to allies at 30% HP or lower, restoring HP at the start of their turns."},
+  { id: 3, name: "The Right Cure",
+    description: "Skill Lv. +2 (up to Lv. 15) and Basic ATK Lv. +1 (up to Lv. 10)."},
+  { id: 4, name: "Miracle Cure",
+    description: "After being attacked, regenerates extra Energy."},
+  { id: 5, name: "Preventive Treatment",
+    description: "Ultimate Lv. +2 (up to Lv. 15) and Talent Lv. +2 (up to Lv. 15)."},
+  { id: 6, name: "Doctor's Grace",
+    description: "Natasha's Basic ATK additionally deals Physical DMG equal to 40% of her Max HP."}
+]
   },
    "14" : {
     name:  "Pela",
@@ -152,8 +503,35 @@ const HonkaiStarRailCharacters = {
     path: "Nihility",
     type: "Ice",
     world: "",
-    description: "Description Coming Soon",
     image: SpecialPassImg,
+    abilities: [
+  { id: 1, name: "Frost Shot",
+    description: "Deals Ice DMG equal to 50%–110% of Pela's ATK to a single target enemy."},
+  { id: 2, name: "Frostbite",
+    description: "Removes 1 buff from a single enemy and deals Ice DMG equal to 105%–231% of Pela's ATK to one designated enemy."},
+  { id: 3, name: "Zone Suppression",
+    description: "Deals Ice DMG equal to 60%–108% of Pela's ATK to all enemies, with a 100% base chance to inflict Defense Reduction (DEF -30%–42%) for 2 turn(s)."},
+  { id: 4, name: "Data Collecting",
+    description: "If Pela attacks an enemy with a debuff, she regenerates additional Energy."},
+  { id: 5, name: "Preemptive Strike",
+    description: "After using Technique, at the start of the next battle, increases the chance to inflict debuffs on enemies."},
+  { id: 6, name: "Wipe Out",
+    description: "When using Skill to remove a buff from an enemy, increases the DMG of the next attack."}
+],
+eidolons: [
+  { id: 1, name: "Victory Report",
+    description: "When an enemy is defeated, Pela regenerates 5 Energy."},
+  { id: 2, name: "Adamant Charge",
+    description: "Using Skill to remove buff(s) increases SPD by 10% for 2 turn(s)."},
+  { id: 3, name: "Suppressive Force",
+    description: "Skill Lv. +2 (up to Lv. 15) and Basic ATK Lv. +1 (up to Lv. 10)."},
+  { id: 4, name: "Full Analysis",
+    description: "When using Skill, there is a 100% base chance to reduce the target enemy's Ice RES by 12% for 2 turn(s)."},
+  { id: 5, name: "Absolute Jeopardy",
+    description: "Ultimate Lv. +2 (up to Lv. 15) and Talent Lv. +2 (up to Lv. 15)."},
+  { id: 6, name: "Feeble Pursuit",
+    description: "After attacking, if the enemy is debuffed, deals additional Ice DMG equal to 40% of Pela's ATK."}
+]
   },
    "15" : {
     name:  "Qingque",
@@ -163,8 +541,35 @@ const HonkaiStarRailCharacters = {
     path: "Erudition",
     type: "Quantum",
     world: "",
-    description: "Description Coming Soon",
     image: SpecialPassImg,
+    abilities: [
+  { id: 1, name: "Greatest Sanctuary: Mallet of Preservation",
+    description: "Deals Quantum DMG equal to 50%–110% of Qingque's ATK to a single enemy."},
+  { id: 2, name: "Tiles Shift, Aware of the Game",
+    description: "Deals Quantum DMG equal to 25%–55% of Qingque's ATK to a single enemy, then draws 2 Jade Tiles and increases DMG based on the number of identical tiles held."},
+  { id: 3, name: "Winning Hand",
+    description: "Deals Quantum DMG equal to 120%–240% of Qingque's ATK to a single enemy, with increased DMG based on her current tile set. Enhanced when holding four identical Jade Tiles."},
+  { id: 4, name: "Tile Aficionado",
+    description: "Each time Qingque draws Jade Tiles, her DMG increases for a short duration, stacking up to a limit."},
+  { id: 5, name: "A Quartet? Easy Win!",
+    description: "After using Technique, Qingque gains extra Jade Tiles at the start of battle and increases her DMG for a few turns."},
+  { id: 6, name: "Hidden Hand",
+    description: "When Qingque has four identical Jade Tiles, her next Enhanced attack consumes them and greatly increases DMG."}
+],
+eidolons: [
+  { id: 1, name: "Time to Tally",
+    description: "When Qingque uses Skill, there is a chance to not consume Skill Points."},
+  { id: 2, name: "Bamboo, Dragon, and Everything in Between",
+    description: "After using Skill, Qingque gains increased ATK for 1 turn."},
+  { id: 3, name: "An Exquisite Balance",
+    description: "Skill Lv. +2 (up to Lv. 15) and Basic ATK Lv. +1 (up to Lv. 10)."},
+  { id: 4, name: "Winning Streak",
+    description: "When Qingque has 4 identical Jade Tiles, her CRIT DMG increases significantly."},
+  { id: 5, name: "All or Nothing",
+    description: "Ultimate Lv. +2 (up to Lv. 15) and Talent Lv. +2 (up to Lv. 15)."},
+  { id: 6, name: "Heavenly Draw",
+    description: "After using Enhanced Skill, Qingque gains extra turn advance or additional damage based on tile match."}
+]
   },
    "16" : {
     name:  "Sampo",
@@ -174,8 +579,35 @@ const HonkaiStarRailCharacters = {
     path: "Nihility",
     type: "Wind",
     world: "",
-    description: "Description Coming Soon",
     image: SpecialPassImg,
+    abilities: [
+  { id: 1, name: "Dazzling Blades",
+    description: "Deals Wind DMG equal to 50%–110% of Sampo's ATK to a single enemy."},
+  { id: 2, name: "Ricochet Love",
+    description: "Deals Wind DMG equal to 28%–61.6% of Sampo's ATK to a single enemy, and bounces 4 additional times, dealing the same DMG to random enemies."},
+  { id: 3, name: "Surprise Present",
+    description: "Deals Wind DMG equal to 96%–172.8% of Sampo's ATK to all enemies. Has a 100% base chance to increase DoT taken by 20%–32% for 2 turn(s)."},
+  { id: 4, name: "Windtorn Dagger",
+    description: "Sampo's attacks have a chance to inflict Wind Shear on enemies, dealing Wind DoT over time. Wind Shear can stack up to 5 times."},
+  { id: 5, name: "Shining Bright",
+    description: "After using Technique, creates a special field that inflicts Blind on enemies, delaying their actions at the start of battle."},
+  { id: 6, name: "Trap",
+    description: "Extends the duration of Wind Shear inflicted by Sampo's Talent by 1 turn."}
+],
+eidolons: [
+  { id: 1, name: "Rising Love",
+    description: "When using Skill, deals 1 additional instance of DMG to a random enemy."},
+  { id: 2, name: "Infectious Enthusiasm",
+    description: "When an enemy afflicted with Wind Shear is defeated, all enemies have a 100% base chance to gain 1 stack of Wind Shear."},
+  { id: 3, name: "Big Money!",
+    description: "Skill Lv. +2 (up to Lv. 15), Basic ATK Lv. +1 (up to Lv. 10)."},
+  { id: 4, name: "The Deeper the Love, the Stronger the Hate",
+    description: "When Sampo's Skill hits an enemy with 5 or more Wind Shear stacks, it immediately deals additional Wind Shear DMG."},
+  { id: 5, name: "Huuuuge Money!",
+    description: "Ultimate Lv. +2 (up to Lv. 15), Talent Lv. +2 (up to Lv. 15)."},
+  { id: 6, name: "Increased Spending",
+    description: "Increases the DMG multiplier of Wind Shear applied by Sampo."}
+]
   },
    "17" : {
     name:  "Seele",
@@ -185,8 +617,35 @@ const HonkaiStarRailCharacters = {
     path: "The Hunt",
     type: "Quantum",
     world: "",
-    description: "Description Coming Soon",
     image: SpecialPassImg,
+    abilities: [
+  { id: 1, name: "Thwack",
+    description: "Deals Quantum DMG equal to 50%–110% of Seele's ATK to a single enemy."},
+  { id: 2, name: "Sheathed Blade",
+    description: "Deals Quantum DMG equal to 110%–242% of Seele's ATK to a single enemy and increases SPD by 25% for 2 turn(s)."},
+  { id: 3, name: "Butterfly Flurry",
+    description: "Seele enters a buffed state and deals Quantum DMG equal to 255%–442% of her ATK to a single enemy."},
+  { id: 4, name: "Resurgence",
+    description: "When defeating an enemy, Seele immediately takes another action and enters a buffed state, increasing her DMG for 1 turn."},
+  { id: 5, name: "Phantom Illusion",
+    description: "After using Technique, Seele enters Stealth. While in Stealth, she cannot be detected and gains a buff at the start of battle."},
+  { id: 6, name: "Lacerate",
+    description: "While in buffed state, Seele’s Quantum RES PEN is increased."}
+],
+eidolons: [
+  { id: 1, name: "Extermination",
+    description: "When dealing DMG to enemies with HP at 80% or lower, increases CRIT Rate."},
+  { id: 2, name: "Dancing Butterfly",
+    description: "Skill SPD boost effect can stack up to 2 times."},
+  { id: 3, name: "Dazzling Tumult",
+    description: "Skill Lv. +2 (up to Lv. 15) and Talent Lv. +2 (up to Lv. 15)."},
+  { id: 4, name: "Flitting Phantasm",
+    description: "Regenerates Energy when defeating enemies."},
+  { id: 5, name: "Piercing Shards",
+    description: "Ultimate Lv. +2 (up to Lv. 15) and Basic ATK Lv. +1 (up to Lv. 10)."},
+  { id: 6, name: "Shattering Shambles",
+    description: "After using Ultimate, applies a follow-up Quantum DMG effect and enhances finishing damage against enemies."}
+]
   },
    "18" : {
     name:  "Serval",
@@ -196,8 +655,35 @@ const HonkaiStarRailCharacters = {
     path: "Erudition",
     type: "Lightning",
     world: "",
-    description: "Description Coming Soon",
     image: SpecialPassImg,
+    abilities: [
+  { id: 1, name: "Roaring Thunder",
+    description: "Deals Lightning DMG equal to 50%–110% of Serval's ATK to a single enemy."},
+  { id: 2, name: "Lightning Flash",
+    description: "Deals Lightning DMG equal to 60%–120% of Serval's ATK to all enemies, with a 80% base chance to inflict Shock for 2 turn(s), dealing Lightning DoT at the start of each turn."},
+  { id: 3, name: "Here Comes the Mechanical Fever",
+    description: "Deals Lightning DMG equal to 108%–216% of Serval's ATK to all enemies and extends the duration of Shock on enemies by 2 turn(s)."},
+  { id: 4, name: "Galvanic Chords",
+    description: "When Serval attacks Shocked enemies, she deals additional Lightning DMG and regenerates Energy."},
+  { id: 5, name: "Good Night, Belobog",
+    description: "After using Technique, attacks all enemies and has a 100% base chance to inflict Shock for 3 turn(s) at the start of battle."},
+  { id: 6, name: "Overload",
+    description: "Increases the DMG of Shock inflicted by Serval."}
+],
+eidolons: [
+  { id: 1, name: "Gilded Span",
+    description: "After using Ultimate, Serval regenerates Energy."},
+  { id: 2, name: "Nailed It!",
+    description: "When Serval attacks enemies afflicted with Shock, increases her CRIT Rate for 2 turn(s)."},
+  { id: 3, name: "Make Some Noise",
+    description: "Skill Lv. +2, up to Lv. 15. Basic ATK Lv. +1, up to Lv. 10."},
+  { id: 4, name: "Rock 'n' Roll",
+    description: "When Serval's Skill hits Shocked enemies, deals additional DMG."},
+  { id: 5, name: "Encore!",
+    description: "Ultimate Lv. +2, Talent Lv. +2."},
+  { id: 6, name: "Harmonic Resonance",
+    description: "Increases the duration and DMG of Shock inflicted by Serval."}
+]
   },
    "19" : {
     name:  "Sushang",
@@ -207,8 +693,35 @@ const HonkaiStarRailCharacters = {
     path: "The Hunt",
     type: "Physical",
     world: "",
-    description: "Description Coming Soon",
     image: SpecialPassImg,
+    abilities: [
+  { id: 1, name: "Cloudfencer Art: Starshine",
+    description: "Deals Physical DMG equal to 50%–110% of Sushang's ATK to a single enemy."},
+  { id: 2, name: "Cloudfencer Art: Mountainfall",
+    description: "Deals Physical DMG equal to 100%–220% of Sushang's ATK to a single enemy, with a chance to trigger Sword Stance, dealing additional Physical DMG."},
+  { id: 3, name: "Shape of Taixu: Dawn Herald",
+    description: "Deals massive Physical DMG to a single enemy. Increases Sushang's ATK and enhances Sword Stance effects."},
+  { id: 4, name: "Dancing Blade",
+    description: "When Weakness Break is triggered on an enemy, Sushang immediately advances her action and deals additional Physical DMG."},
+  { id: 5, name: "Stance of Taixu",
+    description: "After using Technique, Sushang enters a buff state that increases her chance to trigger Sword Stance at the start of battle."},
+  { id: 6, name: "Sword Stance",
+    description: "When triggered, Sushang deals additional instances of Physical DMG and advances her action."}
+],
+eidolons: [
+  { id: 1, name: "Cutting Edge",
+    description: "When Sushang uses Skill on a Weakness Broken enemy, her DMG increases."},
+  { id: 2, name: "Refine Blade",
+    description: "After triggering Sword Stance, Sushang's SPD increases for 2 turns."},
+  { id: 3, name: "Form of the Sword",
+    description: "Skill Lv. +2 (up to Lv. 15) and Basic ATK Lv. +1 (up to Lv. 10)."},
+  { id: 4, name: "Sharp Edge",
+    description: "When entering battle, increases the chance of triggering Sword Stance."},
+  { id: 5, name: "Blade Mastery",
+    description: "Ultimate Lv. +2 (up to Lv. 15) and Talent Lv. +2 (up to Lv. 15)."},
+  { id: 6, name: "Heavenly Sword",
+    description: "When Sword Stance is triggered, increases DMG dealt by Sushang's follow-up attacks."}
+]
   },
    "20" : {
     name:  "Tingyun",
@@ -218,8 +731,35 @@ const HonkaiStarRailCharacters = {
     path: "Harmony",
     type: "Lightning",
     world: "",
-    description: "Description Coming Soon",
     image: SpecialPassImg,
+    abilities: [
+  { id: 1, name: "Dislodged",
+    description: "Deals Lightning DMG equal to 50%–110% of Tingyun's ATK to a single enemy."},
+  { id: 2, name: "Soothing Melody",
+    description: "Grants a single ally Benediction, increasing their ATK by 25%–55% (up to 15%–27% of Tingyun's ATK). When the ally with Benediction attacks, they deal additional Lightning DMG equal to 20%–44% of their ATK for 1 time. Benediction lasts for 3 turn(s) and only applies to the most recent target."},
+  { id: 3, name: "Amidst the Rejoicing Clouds",
+    description: "Regenerates 50 Energy for a single ally and increases the target's DMG by 20%–56% for 2 turn(s)."},
+  { id: 4, name: "Violet Sparknado",
+    description: "When an enemy is attacked by Tingyun, the ally with Benediction immediately deals Lightning Additional DMG equal to 30%–66% of that ally's ATK to the same enemy."},
+  { id: 5, name: "Gentle Breeze",
+    description: "After using Technique, Tingyun immediately regenerates 50 Energy."},
+  { id: 6, name: "Nourished Joviality",
+    description: "After using Skill, Tingyun's SPD increases by 20% for 1 turn."}
+],
+eidolons: [
+  { id: 1, name: "Windfall of Lucky Springs",
+    description: "After using her Ultimate, the ally with Benediction gains a 20% increase in SPD for 1 turn."},
+  { id: 2, name: "Gainfully Gives, Givingly Gains",
+    description: "The ally with Benediction regenerates 5 Energy after defeating an enemy (once per turn)."},
+  { id: 3, name: "Halcyon Bequest",
+    description: "Ultimate Lv. +2 (up to Lv. 15), Basic ATK Lv. +1 (up to Lv. 10)."},
+  { id: 4, name: "Jovial Versatility",
+    description: "The DMG multiplier provided by Benediction increases by 20%."},
+  { id: 5, name: "Sauntering Coquette",
+    description: "Skill Lv. +2 (up to Lv. 15), Talent Lv. +2 (up to Lv. 15)."},
+  { id: 6, name: "Peace Brings Wealth to All",
+    description: "Ultimate regenerates 10 additional Energy for the target ally."}
+]
   },
    "21" : {
     name:  "Trailblazer",
@@ -229,8 +769,35 @@ const HonkaiStarRailCharacters = {
     path: "Destruction",
     type: "Physical",
     world: "",
-    description: "Description Coming Soon",
     image: SpecialPassImg,
+    abilities: [
+  { id: 1, name: "Farewell Hit",
+    description: "Deals Physical DMG equal to 50%–110% of the Trailblazer's ATK to a single enemy."},
+  { id: 2, name: "Rip Home Run",
+    description: "Deals Physical DMG equal to 100%–220% of the Trailblazer's ATK to a single enemy and Physical DMG equal to 40%–88% of the Trailblazer's ATK to adjacent enemies."},
+  { id: 3, name: "Stardust Ace",
+    description: "Deals Physical DMG equal to 120%–240% of the Trailblazer's ATK to a single enemy. If the enemy is Weakness Broken, deals additional DMG."},
+  { id: 4, name: "Treasure of the Stars",
+    description: "After using Basic ATK or Skill, the Trailblazer gains a stack of Enhanced attack effects, increasing their next attack's DMG."},
+  { id: 5, name: "Call of the Guardian",
+    description: "After using Technique, at the start of the next battle, deals Physical DMG to all enemies."},
+  { id: 6, name: "May All Be One",
+    description: "When attacking a Weakness Broken enemy, increases DMG dealt."}
+],
+eidolons: [
+  { id: 1, name: "A Kindling of Hope",
+    description: "When using Skill, increases ATK for 1 turn."},
+  { id: 2, name: "A Quenched Blade",
+    description: "After defeating an enemy, restores Energy."},
+  { id: 3, name: "A Fallen Star",
+    description: "Skill Lv. +2 (up to Lv. 15) and Basic ATK Lv. +1 (up to Lv. 10)."},
+  { id: 4, name: "A Silent Promise",
+    description: "When attacking a Weakness Broken enemy, increases CRIT DMG."},
+  { id: 5, name: "A Trail Reforged",
+    description: "Ultimate Lv. +2 (up to Lv. 15) and Talent Lv. +2 (up to Lv. 15)."},
+  { id: 6, name: "A Flame Rekindled",
+    description: "After using Ultimate, gains additional Energy regeneration and increased DMG for a short duration."}
+]
   },
    "22" : {
     name:  "Trailblazer",
@@ -240,8 +807,35 @@ const HonkaiStarRailCharacters = {
     path: "Preservation",
     type: "Fire",
     world: "",
-    description: "Description Coming Soon",
     image: SpecialPassImg,
+    abilities: [
+  { id: 1, name: "Ice-Breaking Light",
+    description: "Deals Fire DMG equal to 50%–110% of the Trailblazer's ATK to a single enemy and gains 1 stack of Magma Will."},
+  { id: 2, name: "Ever-Burning Amber",
+    description: "Increases the Trailblazer's DMG Reduction and has a 100% base chance to Taunt all enemies for 1 turn, while gaining 1 stack of Magma Will."},
+  { id: 3, name: "War-Flaming Lance",
+    description: "Deals Fire DMG equal to 50%–110% of the Trailblazer's ATK plus 75%–165% of their DEF to all enemies. The next Basic ATK becomes enhanced and does not consume Magma Will."},
+  { id: 4, name: "Treasure of the Architects",
+    description: "When the Trailblazer is hit, gains Magma Will stacks. At 4 stacks, Basic ATK becomes enhanced, dealing Fire DMG to a single enemy and adjacent enemies. Also grants a Shield to all allies when using Basic ATK, Skill, or Ultimate."},
+  { id: 5, name: "Call of the Guardian",
+    description: "After using Technique, at the start of the next battle, grants a Shield to all allies based on DEF."},
+  { id: 6, name: "Unwavering Gallantry",
+    description: "When using Enhanced Basic ATK, restores HP based on Max HP."}
+],
+eidolons: [
+  { id: 1, name: "Earth-Shaking Resonance",
+    description: "Basic ATK deals additional Fire DMG equal to 25%–50% of Trailblazer's DEF."},
+  { id: 2, name: "Time-Defying Tenacity",
+    description: "Shields applied by Talent gain additional damage absorption based on DEF."},
+  { id: 3, name: "Trail-Blazing Blueprint",
+    description: "Skill Lv. +2 (max 15), Talent Lv. +2 (max 15)."},
+  { id: 4, name: "Nation-Building Oath",
+    description: "At the start of battle, immediately gains 4 stacks of Magma Will."},
+  { id: 5, name: "Spirit-Warming Flame",
+    description: "Ultimate Lv. +2 (max 15), Basic ATK Lv. +1 (max 10)."},
+  { id: 6, name: "City-Forging Bulwarks",
+    description: "After using Enhanced Basic ATK or Ultimate, increases DEF up to 3 stacks."}
+]
   },
    "23" : {
     name:  "Welt",
@@ -251,8 +845,35 @@ const HonkaiStarRailCharacters = {
     path: "Nihility",
     type: "Imaginary",
     world: "",
-    description: "Description Coming Soon",
     image: SpecialPassImg,
+    abilities: [
+  { id: 1, name: "Gravity Suppression",
+    description: "Deals Imaginary DMG equal to 50%–110% of Welt's ATK to a single enemy."},
+  { id: 2, name: "Edge of the Void",
+    description: "Deals Imaginary DMG equal to 72%–160% of Welt's ATK to all enemies, with a 65% base chance to inflict Slow for 2 turn(s)."},
+  { id: 3, name: "Synthetic Black Hole",
+    description: "Deals Imaginary DMG equal to 120%–240% of Welt's ATK to all enemies, with a 100% base chance to apply Imprisonment, delaying enemy actions and reducing SPD."},
+  { id: 4, name: "Time Distortion",
+    description: "When attacking a Slowed enemy, Welt deals additional DMG and further reduces their action speed."},
+  { id: 5, name: "Gravitational Imprisonment",
+    description: "After using Technique, at the start of battle, has a chance to inflict Slow on enemies."},
+  { id: 6, name: "Judgment",
+    description: "Increases DMG dealt to enemies affected by Slow or Imprisonment."}
+],
+eidolons: [
+  { id: 1, name: "Time Distortion",
+    description: "When attacking enemies affected by Slow, Welt deals increased DMG."},
+  { id: 2, name: "Retribution",
+    description: "When an enemy is inflicted with Imprisonment, Welt regenerates Energy."},
+  { id: 3, name: "Distorted Bend",
+    description: "Skill Lv. +2 (up to Lv. 15) and Basic ATK Lv. +1 (up to Lv. 10)."},
+  { id: 4, name: "Judgment",
+    description: "Increases DMG dealt to enemies affected by Slow."},
+  { id: 5, name: "Prison of Despair",
+    description: "Ultimate Lv. +2 (up to Lv. 15) and Talent Lv. +2 (up to Lv. 15)."},
+  { id: 6, name: "Black Hole Edge",
+    description: "Extends the duration of Imprisonment and increases its effect on enemy action delay."}
+]
   },
    "24" : {
     name:  "Yanqing",
@@ -262,8 +883,35 @@ const HonkaiStarRailCharacters = {
     path: "The Hunt",
     type: "Ice",
     world: "",
-    description: "Description Coming Soon",
     image: SpecialPassImg,
+    abilities: [
+  { id: 1, name: "Frost Thorn",
+    description: "Deals Ice DMG equal to 50%–110% of Yanqing's ATK to a single enemy. This attack is split into 3 hits (50% + 25% + 25%)."},
+  { id: 2, name: "Darting Ironthorn",
+    description: "Deals Ice DMG equal to 110%–242% of Yanqing's ATK to a single enemy and activates Soulsteel Sync for 1 turn. This attack is split into 4 hits (25% each)."},
+  { id: 3, name: "Amidst the Raining Bliss",
+    description: "Increases Yanqing's CRIT Rate by 60%. When Soulsteel Sync is active, also increases CRIT DMG by 30%–54% for 1 turn, then deals Ice DMG equal to 210%–378% of Yanqing's ATK to a single enemy."},
+  { id: 4, name: "One With the Sword",
+    description: "While Soulsteel Sync is active, increases CRIT Rate and CRIT DMG, and grants a chance to launch a follow-up attack dealing Ice DMG equal to 25%–55% of ATK, with a chance to Freeze the enemy."},
+  { id: 5, name: "The One True Sword",
+    description: "After using Technique, Yanqing gains a buff at the start of battle that increases CRIT stats and helps activate Soulsteel Sync effects."},
+  { id: 6, name: "Soulsteel Sync",
+    description: "When active, increases Yanqing’s CRIT Rate and CRIT DMG and reduces the chance of being attacked. The buff is removed if Yanqing takes damage."}
+],
+eidolons: [
+  { id: 1, name: "Svelte Saber",
+    description: "When Yanqing attacks a Frozen enemy, deals additional Ice DMG equal to 60%–120% of his ATK."},
+  { id: 2, name: "Supine Serenade",
+    description: "When Soulsteel Sync is active, increases Energy Regeneration Rate by 10%."},
+  { id: 3, name: "Sword Savant",
+    description: "Skill Lv. +2 (up to Lv. 15) and Basic ATK Lv. +1 (up to Lv. 10)."},
+  { id: 4, name: "Searing Sting",
+    description: "When Yanqing's HP is 80% or higher, increases Ice RES PEN by 12%."},
+  { id: 5, name: "Surging Strife",
+    description: "Ultimate Lv. +2 (up to Lv. 15) and Talent Lv. +2 (up to Lv. 15)."},
+  { id: 6, name: "Swift Swoop",
+    description: "Extends the duration of Soulsteel Sync and Ultimate buffs by 1 turn when Yanqing defeats an enemy."}
+]
   },
    "25" : {
     name:  "Luocha",
@@ -273,8 +921,35 @@ const HonkaiStarRailCharacters = {
     path: "Abundance",
     type: "Imaginary",
     world: "",
-    description: "Description Coming Soon",
     image: SpecialPassImg,
+    abilities: [
+  { id: 1, name: "Thorns of the Abyss",
+    description: "Deals Imaginary DMG equal to 50%–110% of Luocha's ATK to a single enemy."},
+  { id: 2, name: "Prayer of Abyss Flower",
+    description: "Restores a single ally's HP equal to 7%–12.1% of Luocha's Max HP plus 70–330. Also accumulates Abyss Flower stacks when allies are healed."},
+  { id: 3, name: "Death Wish",
+    description: "Removes 1 debuff from a single ally and restores HP equal to 9%–15.3% of Luocha's Max HP plus 90–396. Can also trigger auto-healing when allies fall below a HP threshold."},
+  { id: 4, name: "Cycle of Life and Death",
+    description: "When Abyss Flower reaches 2 stacks, Luocha automatically creates a field that heals allies when they attack enemies."},
+  { id: 5, name: "Mercy of a Fool",
+    description: "After using Technique, immediately restores HP to all allies and provides a healing field at the start of battle."},
+  { id: 6, name: "Through the Valley",
+    description: "When Luocha's field is active, allies attacking enemies will restore HP based on Luocha's ATK."}
+],
+eidolons: [
+  { id: 1, name: "Aureate Elixir",
+    description: "When Luocha's field is active, increases allies' ATK."},
+  { id: 2, name: "Bestowal From Beyond",
+    description: "When Luocha heals an ally below 50% HP, healing is increased."},
+  { id: 3, name: "Thorns of Life",
+    description: "Skill Lv. +2 (up to Lv. 15), Basic ATK Lv. +1 (up to Lv. 10)."},
+  { id: 4, name: "Deadly Flower",
+    description: "When the field is active, allies deal increased DMG."},
+  { id: 5, name: "Mercy of the Depths",
+    description: "Ultimate Lv. +2 (up to Lv. 15), Talent Lv. +2 (up to Lv. 15)."},
+  { id: 6, name: "Requiem of Souls",
+    description: "When Abyss Flower triggers auto-healing, increases healing amount and effect."}
+]
   },
    "26" : {
     name:  "Silver Wolf",
@@ -284,8 +959,35 @@ const HonkaiStarRailCharacters = {
     path: "Nihility",
     type: "Quantum",
     world: "",
-    description: "Description Coming Soon",
     image: SpecialPassImg,
+    abilities: [
+  { id: 1, name: "System Warning",
+    description: "Deals Quantum DMG equal to 50%–110% of Silver Wolf's ATK to a single enemy. This Basic ATK is dealt in multiple hits."},
+  { id: 2, name: "Allow Changes?",
+    description: "Has a base chance to implant 1 Weakness of an ally’s Type into a single enemy, and reduces that enemy’s RES to that Type for 2 turn(s). Also deals Quantum DMG equal to 228%–410.4% of Silver Wolf’s ATK to the target."},
+  { id: 3, name: "User Banned",
+    description: "Deals Quantum DMG to all enemies and has a high base chance to reduce all enemies’ DEF by 36%–46.8% for 3 turn(s)."},
+  { id: 4, name: "Awaiting System Response",
+    description: "Every attack has a chance to implant a random Bug on the enemy, reducing ATK, DEF, or SPD for 3 turn(s)."},
+  { id: 5, name: "Force Quit Program",
+    description: "After using Technique, immediately attacks all enemies. At the start of battle, deals Quantum DMG and reduces Toughness regardless of Weakness Type, triggering Weakness Break effects."},
+  { id: 6, name: "Aether Editing",
+    description: "Silver Wolf can manipulate enemy weaknesses and apply multiple debuffs, increasing overall damage taken by enemies."}
+],
+eidolons: [
+  { id: 1, name: "Social Engineering",
+    description: "After using Ultimate, regenerates Energy for each debuff on the target (up to a limit per use)."},
+  { id: 2, name: "Zombie Network",
+    description: "When enemies enter battle, their Effect RES is reduced."},
+  { id: 3, name: "Payload",
+    description: "Skill Lv. +2 (up to Lv. 15) and Talent Lv. +2 (up to Lv. 15)."},
+  { id: 4, name: "Bounce Attack",
+    description: "After Ultimate, deals additional Quantum DMG based on number of debuffs on the enemy (up to multiple triggers)."},
+  { id: 5, name: "Brute Force Attack",
+    description: "Ultimate Lv. +2 (up to Lv. 15) and Basic ATK Lv. +1 (up to Lv. 10)."},
+  { id: 6, name: "Overlay Network",
+    description: "For each debuff on the enemy, Silver Wolf’s DMG increases significantly, up to a cap."}
+]
   },
    "27" : {
     name:  "Yukong",
@@ -295,8 +997,35 @@ const HonkaiStarRailCharacters = {
     path: "Harmony",
     type: "Imaginary",
     world: "",
-    description: "Description Coming Soon",
     image: SpecialPassImg,
+    abilities: [
+  { id: 1, name: "Arrowslinger",
+    description: "Deals Imaginary DMG equal to 50%–110% of Yukong's ATK to a single enemy. When enhanced by Seven Layers, One Arrow, this attack deals damage in 3 hits (20% + 20% + 60%)."},
+  { id: 2, name: "Emboldening Salvo",
+    description: "Obtains 2 stacks of Roaring Bowstrings (max 2). When active, increases all allies' ATK by 40%–88%. Every time an ally's turn ends, Yukong loses 1 stack. If she gains stacks on her own turn, they are not immediately consumed."},
+  { id: 3, name: "Diving Kestrel",
+    description: "Deals Imaginary DMG equal to 228%–410.4% of Yukong's ATK to a single enemy. If Roaring Bowstrings is active, also increases all allies' CRIT Rate by 21%–29.4% and CRIT DMG by 39%–70.2%."},
+  { id: 4, name: "Seven Layers, One Arrow",
+    description: "Enhances Basic ATK, adding additional Imaginary DMG equal to 40%–88% of Yukong's ATK and increasing Toughness Reduction. This effect has a cooldown."},
+  { id: 5, name: "Windchaser",
+    description: "After using Technique, increases movement speed and grants Roaring Bowstrings stacks at the start of battle when engaging enemies."},
+  { id: 6, name: "Roaring Bowstrings",
+    description: "Core mechanic: when active, increases ATK and enables Ultimate to grant additional CRIT Rate and CRIT DMG buffs."}
+],
+eidolons: [
+  { id: 1, name: "Aerial Marshal",
+    description: "At the start of battle, increases all allies' SPD by 10% for 2 turn(s)."},
+  { id: 2, name: "Skyward Command",
+    description: "When an ally's energy is full, Yukong regenerates Energy (once per ally per battle). Reset when she uses her Ultimate."},
+  { id: 3, name: "Torrential Fusillade",
+    description: "Skill Lv. +2 (up to Lv. 15), Basic ATK Lv. +1 (up to Lv. 10)."},
+  { id: 4, name: "Zephyrean Echoes",
+    description: "When Roaring Bowstrings is active, Yukong deals 30% increased DMG."},
+  { id: 5, name: "August Deadshot",
+    description: "Ultimate Lv. +2 (up to Lv. 15), Talent Lv. +2 (up to Lv. 15)."},
+  { id: 6, name: "Bowstring Thunderclap",
+    description: "When Yukong uses her Ultimate, she immediately gains 1 stack of Roaring Bowstrings."}
+]
   },
    "28" : {
     name:  "Blade",
@@ -306,8 +1035,35 @@ const HonkaiStarRailCharacters = {
     path: "Destruction",
     type: "Wind",
     world: "",
-    description: "Description Coming Soon",
     image: SpecialPassImg,
+    abilities: [
+  { id: 1, name: "Shard Sword",
+    description: "Deals Wind DMG equal to 50%–110% of Blade's ATK to a single enemy."},
+  { id: 2, name: "Forest of Swords",
+    description: "Consumes Blade's HP and enters the Hellscape state. While in this state, his Basic ATK is enhanced and deals increased DMG based on his Max HP and lost HP."},
+  { id: 3, name: "Hellscape",
+    description: "Enhances Blade's combat abilities. In this state, he gains increased DMG, changes his Basic ATK, and improves follow-up attack performance based on HP loss."},
+  { id: 4, name: "Death Sentence",
+    description: "When Blade loses HP (or is attacked), he gains Charge stacks. At 5 stacks, he launches a follow-up attack dealing Wind DMG based on ATK and Max HP, then restores HP."},
+  { id: 5, name: "Karma Wind",
+    description: "After using Technique, consumes HP and deals Wind DMG to all enemies at the start of battle while gaining a combat advantage."},
+  { id: 6, name: "Shuhu’s Gift",
+    description: "Blade’s follow-up attacks scale heavily with Max HP and HP lost. When Charge is full, he triggers an AoE follow-up attack and heals himself."}
+],
+eidolons: [
+  { id: 1, name: "Blade Cuts the Deepest in Hell",
+    description: "Blade's Ultimate deals increased DMG based on HP lost in the current battle (up to a cap). The tally resets after using Ultimate."},
+  { id: 2, name: "Ten Thousand Sorrows From One Broken Dream",
+    description: "When Blade is in the Hellscape state, his CRIT Rate increases by 15%."},
+  { id: 3, name: "Hardened Blade Bleeds Coldest Shade",
+    description: "Ultimate Lv. +2 (up to Lv. 15) and Talent Lv. +2 (up to Lv. 15)."},
+  { id: 4, name: "Rejected by Death, Infected With Life",
+    description: "When Blade’s HP drops to 50% or below, his Max HP increases by 20%, stacking up to 2 times."},
+  { id: 5, name: "Death By Ten Lords’ Gaze",
+    description: "Skill Lv. +2 (up to Lv. 15) and Basic ATK Lv. +1 (up to Lv. 10)."},
+  { id: 6, name: "Reborn Into an Empty Husk",
+    description: "Reduces Charge requirement for follow-up attack to 4 stacks and greatly increases follow-up attack DMG scaling with Max HP."}
+]
   },
    "29" : {
     name:  "Kafka",
@@ -317,8 +1073,35 @@ const HonkaiStarRailCharacters = {
     path: "Nihility",
     type: "Lightning",
     world: "",
-    description: "Description Coming Soon",
     image: SpecialPassImg,
+    abilities: [
+  { id: 1, name: "Midnight Tumult",
+    description: "Deals Lightning DMG equal to 50%–110% of Kafka's ATK to a single enemy."},
+  { id: 2, name: "Caressing Moonlight",
+    description: "Deals Lightning DMG equal to 70%–154% of Kafka's ATK to a single enemy and immediately triggers all existing DoT effects on the target."},
+  { id: 3, name: "Twilight Trill",
+    description: "Deals Lightning DMG equal to 120%–240% of Kafka's ATK to all enemies, with a chance to apply Shock and also trigger existing DoT effects."},
+  { id: 4, name: "Gentle but Cruel",
+    description: "Kafka’s attacks have a chance to inflict Shock, dealing Lightning DoT over time."},
+  { id: 5, name: "Mercy Is Not for the Weak",
+    description: "After using Technique, immediately attacks all enemies and applies Shock at the start of battle."},
+  { id: 6, name: "Painful Love",
+    description: "Increases the DMG dealt by Shock and improves Kafka’s ability to trigger DoT detonation effects."}
+],
+eidolons: [
+  { id: 1, name: "Da Capo",
+    description: "When Kafka uses her Skill, increases the DMG of DoT effects on the target for 2 turn(s)."},
+  { id: 2, name: "Fortississimo",
+    description: "Increases Kafka’s ATK when enemies are affected by Shock."},
+  { id: 3, name: "Capriccio",
+    description: "Skill Lv. +2 (up to Lv. 15) and Basic ATK Lv. +1 (up to Lv. 10)."},
+  { id: 4, name: "Recitativo",
+    description: "When Kafka triggers DoT effects, she regenerates Energy."},
+  { id: 5, name: "Doloroso",
+    description: "Ultimate Lv. +2 (up to Lv. 15) and Talent Lv. +2 (up to Lv. 15)."},
+  { id: 6, name: "Leggiero",
+    description: "Increases the frequency and DMG of DoT trigger effects, especially Shock."}
+]
   },
    "30" : {
     name:  "Luka",
@@ -328,8 +1111,35 @@ const HonkaiStarRailCharacters = {
     path: "Nihility",
     type: "Physical",
     world: "",
-    description: "Description Coming Soon",
     image: SpecialPassImg,
+    abilities: [
+  { id: 1, name: "Direct Punch",
+    description: "Deals Physical DMG equal to 50%–110% of Luka's ATK to a single enemy."},
+  { id: 2, name: "Sky-high Big Shot",
+    description: "Deals Physical DMG equal to 60%–132% of Luka's ATK to a single enemy. Has a chance to inflict Bleed, dealing Physical DoT over time based on the enemy's Max HP."},
+  { id: 3, name: "Coup de Main",
+    description: "Deals Physical DMG to a single enemy and increases the target's DMG taken. Also immediately triggers Bleed DMG if the target is already affected by Bleed."},
+  { id: 4, name: "Flying Sparks",
+    description: "Luka gains Fighting Will stacks when hitting enemies. At maximum stacks, his Basic ATK is enhanced and deals increased DMG while applying stronger Bleed effects."},
+  { id: 5, name: "Ringside Cheer",
+    description: "After using Technique, enters battle with a chance to immediately inflict Bleed on enemies and gain Fighting Will stacks."},
+  { id: 6, name: "Bleeding Edge",
+    description: "Increases the DMG dealt to enemies affected by Bleed and improves Luka’s Bleed application efficiency."}
+],
+eidolons: [
+  { id: 1, name: "Courage to Strike",
+    description: "When Luka attacks an enemy affected by Bleed, increases his ATK for 2 turn(s)."},
+  { id: 2, name: "Pain and Glory",
+    description: "When Luka inflicts Bleed, increases the target's DoT taken for 2 turn(s)."},
+  { id: 3, name: "Stage Dominance",
+    description: "Skill Lv. +2 (up to Lv. 15) and Basic ATK Lv. +1 (up to Lv. 10)."},
+  { id: 4, name: "Fight to the End",
+    description: "When attacking enemies with Bleed, Luka regenerates Energy."},
+  { id: 5, name: "Champion's Spirit",
+    description: "Ultimate Lv. +2 (up to Lv. 15) and Talent Lv. +2 (up to Lv. 15)."},
+  { id: 6, name: "Final Round",
+    description: "Luka’s Bleed DMG is significantly increased, and his Enhanced Basic ATK deals additional Bleed-triggered damage."}
+]
   },
    "31" : {
     name:  "Fu Xuan",
@@ -339,8 +1149,35 @@ const HonkaiStarRailCharacters = {
     path: "Preservation",
     type: "Quantum",
     world: "",
-    description: "Description Coming Soon",
     image: SpecialPassImg,
+    abilities: [
+  { id: 1, name: "Novaburst",
+    description: "Deals Quantum DMG equal to 50%–110% of Fu Xuan's ATK to a single enemy."},
+  { id: 2, name: "Known by Stars, Shown by Hearts",
+    description: "Activates the Matrix of Prescience, a field that reduces allies' DMG taken and transfers a portion of incoming damage to Fu Xuan."},
+  { id: 3, name: "Dunjia, Metamystic",
+    description: "Deals Quantum DMG equal to 150%–330% of Fu Xuan's ATK to a single enemy and restores HP for allies based on Max HP."},
+  { id: 4, name: "Omniscia Spares None",
+    description: "While Matrix of Prescience is active, Fu Xuan gains damage mitigation and increases allies' survivability through shared damage redistribution."},
+  { id: 5, name: "Woes Woven, Woes Warded",
+    description: "After using Technique, creates a field that reduces enemy damage output at the start of battle and provides defensive buffs."},
+  { id: 6, name: "Bleak Breeds Bliss",
+    description: "When Fu Xuan is affected by Matrix of Prescience, increases her Effect RES and improves damage sharing efficiency."}
+],
+eidolons: [
+  { id: 1, name: "Dominus Matrix",
+    description: "While Matrix of Prescience is active, increases allies' CRIT Rate."},
+  { id: 2, name: "Optical Visage",
+    description: "When Fu Xuan takes damage transferred from allies, she regenerates Energy."},
+  { id: 3, name: "Omniscia, As It Is",
+    description: "Skill Lv. +2 (up to Lv. 15), Talent Lv. +2 (up to Lv. 15)."},
+  { id: 4, name: "Cerebral Omniscience",
+    description: "Increases healing received and reduces damage taken for Fu Xuan while Matrix of Prescience is active."},
+  { id: 5, name: "Dunjia, Metamystic Light",
+    description: "Ultimate Lv. +2 (up to Lv. 15), Basic ATK Lv. +1 (up to Lv. 10)."},
+  { id: 6, name: "Bloom of the Deepest Star",
+    description: "Extends Matrix of Prescience duration and enhances its damage-sharing and survivability effects."}
+]
   },
    "32" : {
     name:  "Lynx",
@@ -350,8 +1187,35 @@ const HonkaiStarRailCharacters = {
     path: "Abundance",
     type: "Quantum",
     world: "",
-    description: "Description Coming Soon",
     image: SpecialPassImg,
+    abilities: [
+  { id: 1, name: "Ice Crampon Technique",
+    description: "Deals Quantum DMG equal to 50%–110% of Lynx's ATK to a single enemy."},
+  { id: 2, name: "Salted Camping Cans",
+    description: "Restores a single ally's HP equal to 8%–14.4% of Lynx's Max HP plus 80–400. Also increases the target's Max HP for 2 turn(s)."},
+  { id: 3, name: "Snowfield First Aid",
+    description: "Heals all allies based on Lynx's Max HP and removes 1 debuff from each ally."},
+  { id: 4, name: "Outdoor Survival",
+    description: "When an ally affected by Survival Response is attacked, Lynx's healing effects on that ally are increased."},
+  { id: 5, name: "Snowfield Buddy",
+    description: "After using Technique, immediately heals all allies and grants a defensive buff at the start of battle."},
+  { id: 6, name: "Survival Response",
+    description: "Applies a buff that increases Max HP and enhances healing received for a single ally."}
+],
+eidolons: [
+  { id: 1, name: "Morning of Snowy Trek",
+    description: "When Lynx heals an ally, increases their Effect RES for 2 turn(s)."},
+  { id: 2, name: "No Field Is Too Wild",
+    description: "When an ally under Survival Response is attacked, they gain increased DEF for 1 turn."},
+  { id: 3, name: "Outdoor Cooking",
+    description: "Skill Lv. +2 (up to Lv. 15), Basic ATK Lv. +1 (up to Lv. 10)."},
+  { id: 4, name: "Ice Pack Refresh",
+    description: "When Lynx uses her Ultimate, increases healing output for all allies for 2 turn(s)."},
+  { id: 5, name: "Campfire Story",
+    description: "Ultimate Lv. +2 (up to Lv. 15), Talent Lv. +2 (up to Lv. 15)."},
+  { id: 6, name: "Endless Snowfield",
+    description: "Increases the duration and healing effectiveness of Survival Response."}
+]
   },
    "33" : {
     name:  "Guinaifen",
@@ -361,8 +1225,35 @@ const HonkaiStarRailCharacters = {
     path: "Nihility",
     type: "Fire",
     world: "",
-    description: "Description Coming Soon",
     image: SpecialPassImg,
+    abilities: [
+  { id: 1, name: "Standing Ovation",
+    description: "Deals Fire DMG equal to 50%–110% of Guinaifen's ATK to a single enemy."},
+  { id: 2, name: "Watch This Showstopper!",
+    description: "Deals Fire DMG equal to 60%–132% of Guinaifen's ATK to a single enemy and has a base chance to inflict Burn, dealing Fire DoT over time."},
+  { id: 3, name: "Boom! Bang! Pop!",
+    description: "Deals Fire DMG equal to 90%–180% of Guinaifen's ATK to all enemies and increases the DMG taken by Burned enemies."},
+  { id: 4, name: "Fire Dance",
+    description: "When Guinaifen attacks Burned enemies, she deals additional DMG and extends Burn duration."},
+  { id: 5, name: "Street Performer",
+    description: "After using Technique, applies Burn to enemies at the start of battle and deals Fire DMG to all enemies."},
+  { id: 6, name: "Fiery Showmanship",
+    description: "Increases the DMG of Burn inflicted by Guinaifen and improves her ability to apply Burn stacks."}
+],
+eidolons: [
+  { id: 1, name: "Opening Act",
+    description: "When Guinaifen uses Skill, increases the DMG taken by Burned enemies for 2 turn(s)."},
+  { id: 2, name: "Encore Performance",
+    description: "When Burn is triggered, Guinaifen regenerates Energy (once per turn)."},
+  { id: 3, name: "Stage Presence",
+    description: "Skill Lv. +2 (up to Lv. 15), Basic ATK Lv. +1 (up to Lv. 10)."},
+  { id: 4, name: "Spotlight Heat",
+    description: "Increases the duration of Burn inflicted by Guinaifen."},
+  { id: 5, name: "Grand Finale",
+    description: "Ultimate Lv. +2 (up to Lv. 15), Talent Lv. +2 (up to Lv. 15)."},
+  { id: 6, name: "Flaming Ovation",
+    description: "Burned enemies take significantly increased DoT, and Guinaifen’s Burn effects can stack more effectively."}
+]
   },
    "34" : {
     name:  "Topaz & Numby",
@@ -372,8 +1263,35 @@ const HonkaiStarRailCharacters = {
     path: "The Hunt",
     type: "Fire",
     world: "",
-    description: "Description Coming Soon",
     image: SpecialPassImg,
+    abilities: [
+  { id: 1, name: "Deficit...",
+    description: "Deals Fire DMG equal to 50%–110% of Topaz's ATK to a single enemy. Numby also deals additional DMG."},
+  { id: 2, name: "Difficulty Paying?",
+    description: "Deals Fire DMG equal to 75%–165% of Topaz's ATK to a single enemy and inflicts a debuff that increases follow-up attack DMG taken."},
+  { id: 3, name: "Turn a Profit!",
+    description: "Deals Fire DMG equal to 150%–300% of Topaz's ATK to a single enemy and advances Numby's action, allowing additional follow-up attacks."},
+  { id: 4, name: "Numby",
+    description: "A follow-up attack companion that deals Fire DMG and triggers additional attacks when enemies are hit by follow-up attacks."},
+  { id: 5, name: "Nice to Meet You!",
+    description: "After using Technique, Numby immediately attacks enemies at the start of battle and marks targets for follow-up damage bonuses."},
+  { id: 6, name: "Trotter Market Analysis",
+    description: "Increases follow-up attack DMG and enhances Numby’s damage scaling and action frequency."}
+],
+eidolons: [
+  { id: 1, name: "Future Market",
+    description: "Increases Numby’s DMG and improves follow-up attack synergy."},
+  { id: 2, name: "Golden Debt Chain",
+    description: "When enemies are attacked by Numby, Topaz regenerates Energy."},
+  { id: 3, name: "Inflation Index",
+    description: "Skill Lv. +2 (up to Lv. 15), Basic ATK Lv. +1 (up to Lv. 10)."},
+  { id: 4, name: "Financial Turbulence",
+    description: "When Numby attacks, increases CRIT DMG dealt to the target."},
+  { id: 5, name: "Asset Expansion",
+    description: "Ultimate Lv. +2 (up to Lv. 15), Talent Lv. +2 (up to Lv. 15)."},
+  { id: 6, name: "Market Dominance",
+    description: "Numby’s follow-up attacks are significantly strengthened and trigger more frequently."}
+]
   },
    "35" : {
     name:  "Jingliu",
@@ -383,8 +1301,35 @@ const HonkaiStarRailCharacters = {
     path: "Destruction",
     type: "Ice",
     world: "",
-    description: "Description Coming Soon",
     image: SpecialPassImg,
+    abilities: [
+  { id: 1, name: "Lucent Moonglow",
+    description: "Deals Ice DMG equal to 50%–110% of Jingliu's ATK to a single enemy."},
+  { id: 2, name: "Transcendent Flash",
+    description: "Deals Ice DMG equal to 100%–220% of Jingliu's ATK to a single enemy and gains 1 stack of Syzygy."},
+  { id: 3, name: "Florephemeral Dreamflux",
+    description: "Deals Ice DMG equal to 180%–360% of Jingliu's ATK to all enemies and gains Syzygy stacks, enhancing her combat state."},
+  { id: 4, name: "Spectral Transmigration",
+    description: "When Jingliu accumulates sufficient Syzygy stacks, she enters Spectral Transmigration, enhancing her Skill and increasing CRIT stats while consuming allies' HP to boost damage."},
+  { id: 5, name: "Moon On Glacial River",
+    description: "After using Technique, Jingliu enters a buffed state at the start of battle, gaining Syzygy and increased DMG."},
+  { id: 6, name: "Crescent Transmigration",
+    description: "Jingliu gains enhanced abilities while in Spectral Transmigration, increasing DMG based on Syzygy stacks and consuming HP to empower attacks."}
+],
+eidolons: [
+  { id: 1, name: "Moon Crashes Tianguan Gate",
+    description: "When in Spectral Transmigration, Jingliu's CRIT DMG is increased."},
+  { id: 2, name: "Crescent Shadows Sunder",
+    description: "After using Ultimate, increases DMG dealt by enhanced Skill."},
+  { id: 3, name: "Eclipse of Glacial Heart",
+    description: "Skill Lv. +2 (up to Lv. 15) and Basic ATK Lv. +1 (up to Lv. 10)."},
+  { id: 4, name: "Shattered Moon's Reflection",
+    description: "When Jingliu defeats an enemy, she regenerates Energy."},
+  { id: 5, name: "Frigid Starfall",
+    description: "Ultimate Lv. +2 (up to Lv. 15) and Talent Lv. +2 (up to Lv. 15)."},
+  { id: 6, name: "Beyond the Frozen Sky",
+    description: "Enhances Syzygy effects, increasing DMG and extending Spectral Transmigration benefits."}
+]
   },
    "36" : {
     name:  "Argenti",
@@ -394,8 +1339,35 @@ const HonkaiStarRailCharacters = {
     path: "Erudition",
     type: "Physical",
     world: "",
-    description: "Description Coming Soon",
     image: SpecialPassImg,
+    abilities: [
+  { id: 1, name: "Fleeting Fragrance",
+    description: "Deals Physical DMG equal to 50%–110% of Argenti's ATK to a single target enemy."},
+  { id: 2, name: "Justice, Hereby Blooms",
+    description: "Deals Physical DMG equal to 60%–132% of Argenti's ATK to all enemies."},
+  { id: 3, name: "For In This Garden, Supreme Beauty Bestows",
+    description: "Consumes 90 Energy and deals Physical DMG equal to 96%–172.8% of Argenti's ATK to all enemies."},
+  { id: 4, name: "Merit Bestowed in 'My' Garden",
+    description: "Consumes 180 Energy and deals Physical DMG equal to 168%–302.4% of Argenti's ATK to all enemies, then deals additional DMG 6 times, each hit dealing 57%–102.6% of ATK to random enemies."},
+  { id: 5, name: "Sublime Object",
+    description: "For each enemy hit by Argenti's Basic ATK, Skill, or Ultimate, he regenerates Energy and gains Apotheosis stacks, increasing CRIT Rate up to 10 stacks."},
+  { id: 6, name: "Manifesto of Purest Virtue",
+    description: "After using Technique, inflicts Daze on enemies in an area. Dazed enemies cannot act and take bonus Physical DMG when entering battle."}
+],
+eidolons: [
+  { id: 1, name: "A Lacuna in Kingdom of Aesthetics",
+    description: "Each stack of Apotheosis additionally increases CRIT DMG by 4%."},
+  { id: 2, name: "Agate's Humility",
+    description: "If there are 3 or more enemies when using Ultimate, increases ATK by 40% for 1 turn."},
+  { id: 3, name: "Thorny Road's Glory",
+    description: "Skill Lv. +2 (up to Lv. 15), Talent Lv. +2 (up to Lv. 15)."},
+  { id: 4, name: "Trumpet's Dedication",
+    description: "At the start of battle, gains 2 stacks of Apotheosis and increases max stack limit of Talent by 2."},
+  { id: 5, name: "Snow, From Somewhere in Cosmos",
+    description: "Ultimate Lv. +2 (up to Lv. 15), Basic ATK Lv. +1 (up to Lv. 10)."},
+  { id: 6, name: "Your Resplendence",
+    description: "When using Ultimate, ignores 30% of enemy DEF."}
+]
   },
    "37" : {
     name:  "Hanya",
@@ -405,8 +1377,35 @@ const HonkaiStarRailCharacters = {
     path: "Harmony",
     type: "Physical",
     world: "",
-    description: "Description Coming Soon",
     image: SpecialPassImg,
+    abilities: [
+  { id: 1, name: "Oracle Brush",
+    description: "Deals Physical DMG equal to 50%–110% of Hanya's ATK to a single enemy."},
+  { id: 2, name: "Sealing Talisman",
+    description: "Applies Burden to a single enemy, increasing DMG taken from Skill Points consumed by allies. Also deals Physical DMG equal to 100%–220% of Hanya's ATK."},
+  { id: 3, name: "Ten-Lords' Decree",
+    description: "Restores Skill Points for the team and deals Physical DMG equal to 120%–240% of Hanya's ATK to a single enemy."},
+  { id: 4, name: "Sanction",
+    description: "When allies consume Skill Points on enemies affected by Burden, they deal increased DMG and Hanya regenerates Energy."},
+  { id: 5, name: "Judgment of the Ten-Lords",
+    description: "After using Technique, at the start of battle applies Burden to an enemy and increases team Skill Point efficiency."},
+  { id: 6, name: "Karma Retribution",
+    description: "When allies consume Skill Points on Burdened enemies, increases their SPD for a short duration."}
+],
+eidolons: [
+  { id: 1, name: "Rebirth of Karma",
+    description: "When allies attack a Burdened enemy, increases their ATK."},
+  { id: 2, name: "Wrath of the Ten-Lords",
+    description: "When Skill Points are recovered, increases allies' SPD for 1 turn."},
+  { id: 3, name: "Verdict of Silence",
+    description: "Skill Lv. +2 (up to Lv. 15), Basic ATK Lv. +1 (up to Lv. 10)."},
+  { id: 4, name: "Chains of Judgment",
+    description: "Increases the DMG bonus provided by Burden."},
+  { id: 5, name: "Final Decree",
+    description: "Ultimate Lv. +2 (up to Lv. 15), Talent Lv. +2 (up to Lv. 15)."},
+  { id: 6, name: "Cycle of Retribution",
+    description: "When allies consume Skill Points on Burdened enemies, restores additional Energy and increases DMG dealt."}
+]
   },
    "38" : {
     name:  "Huohuo",
@@ -416,8 +1415,35 @@ const HonkaiStarRailCharacters = {
     path: "Abundance",
     type: "Wind",
     world: "",
-    description: "Description Coming Soon",
     image: SpecialPassImg,
+    abilities: [
+  { id: 1, name: "Banner: Stormcaller",
+    description: "Deals Wind DMG equal to 50%–110% of Huohuo's ATK to a single enemy."},
+  { id: 2, name: "Talisman: Protection",
+    description: "Restores a single ally's HP equal to 8%–14.4% of Huohuo's Max HP plus 80–400, and applies Sacrificial Offering, increasing healing received."},
+  { id: 3, name: "Banner: Cleansing Breeze",
+    description: "Heals all allies based on Huohuo's Max HP and removes 1 debuff from each ally."},
+  { id: 4, name: "Talisman: Spiritual Domination",
+    description: "When allies with Sacrificial Offering take action, Huohuo regenerates Energy and may trigger additional healing effects."},
+  { id: 5, name: "Banner: Protection of Life",
+    description: "After using Technique, creates a field that heals allies at the start of battle and increases survivability."},
+  { id: 6, name: "Possession of the Foxian Spirit",
+    description: "When Huohuo's Talent is active, she automatically heals allies when their HP drops below a threshold and regenerates Energy."}
+],
+eidolons: [
+  { id: 1, name: "Fearful to Fearless",
+    description: "When Huohuo heals an ally, increases their ATK for 2 turn(s)."},
+  { id: 2, name: "Cleansed and Refreshed",
+    description: "When Sacrificial Offering is active, allies gain increased Effect RES."},
+  { id: 3, name: "Banner of Joy",
+    description: "Skill Lv. +2 (up to Lv. 15), Basic ATK Lv. +1 (up to Lv. 10)."},
+  { id: 4, name: "Spirit Sealing Charm",
+    description: "When Huohuo triggers healing from her Talent, she regenerates additional Energy."},
+  { id: 5, name: "Guardian of Life",
+    description: "Ultimate Lv. +2 (up to Lv. 15), Talent Lv. +2 (up to Lv. 15)."},
+  { id: 6, name: "Foxian Blessing",
+    description: "Extends the duration of Sacrificial Offering and increases healing effectiveness."}
+]
   },
    "39" : {
     name:  "Dr. Ratio",
@@ -427,8 +1453,35 @@ const HonkaiStarRailCharacters = {
     path: "The Hunt",
     type: "Imaginary",
     world: "",
-    description: "Description Coming Soon",
     image: SpecialPassImg,
+    abilities: [
+  { id: 1, name: "Mind is Might",
+    description: "Deals Imaginary DMG equal to 50%–110% of Dr. Ratio's ATK to a single enemy."},
+  { id: 2, name: "Intellectual Midwifery",
+    description: "Deals Imaginary DMG equal to 75%–165% of Dr. Ratio's ATK to a single enemy. For each debuff on the target, increases CRIT Rate and CRIT DMG of this Skill (up to a limit). Also has a 100% base chance to reduce the target's Effect RES by 10% for 2 turn(s)."},
+  { id: 3, name: "Syllogistic Paradox",
+    description: "Deals Imaginary DMG equal to 144%–259.2% of Dr. Ratio's ATK to a single enemy and applies Wiseman's Folly. When allies attack a target with Wiseman's Folly, Dr. Ratio launches follow-up attacks against it (limited number of triggers)."},
+  { id: 4, name: "Cogito, Ergo Sum",
+    description: "When using Skill, has a fixed chance to launch a follow-up attack dealing Imaginary DMG equal to 135%–297% of ATK. The chance increases based on the number of debuffs on the target."},
+  { id: 5, name: "Mold of Idolatry",
+    description: "After using Technique, creates a dimension that taunts enemies. At battle start, reduces all enemies' SPD by 15% for 2 turn(s)."},
+  { id: 6, name: "Wiseman's Folly",
+    description: "When allies attack a target affected by Wiseman's Folly, triggers Dr. Ratio's follow-up attack (limited charges per Ultimate use)."}
+],
+eidolons: [
+  { id: 1, name: "Pride Comes Before a Fall",
+    description: "Increases Summation cap by 4 and grants stacks at the start of battle, boosting Skill CRIT Rate and CRIT DMG scaling per debuff."},
+  { id: 2, name: "The Divine Is in the Details",
+    description: "Talent follow-up attacks deal additional Imaginary DMG based on number of debuffs on the target (limited triggers per hit)."},
+  { id: 3, name: "Know Thyself",
+    description: "Ultimate Lv. +2 (up to Lv. 15), Basic ATK Lv. +1 (up to Lv. 10)."},
+  { id: 4, name: "Ignorance Is Blight",
+    description: "Regenerates 15 Energy when Talent follow-up attacks are triggered."},
+  { id: 5, name: "Sic Itur Ad Astra",
+    description: "Skill Lv. +2 (up to Lv. 15), Talent Lv. +2 (up to Lv. 15)."},
+  { id: 6, name: "Vincit Omnia Veritas",
+    description: "Increases Wiseman’s Folly trigger count and greatly boosts Talent follow-up attack DMG."}
+]
   },
    "40" : {
     name:  "Ruan Mei",
@@ -438,8 +1491,35 @@ const HonkaiStarRailCharacters = {
     path: "Harmony",
     type: "Ice",
     world: "",
-    description: "Description Coming Soon",
     image: SpecialPassImg,
+    abilities: [
+  { id: 1, name: "Threading Fragrance",
+    description: "Deals Ice DMG equal to 50%–110% of Ruan Mei's ATK to a single enemy."},
+  { id: 2, name: "String Sings Slow",
+    description: "Creates a field that increases all allies' Weakness Break Efficiency by 50% and increases their All-Type RES PEN by 20%–36% for 2 turn(s). The field lasts for a set duration."},
+  { id: 3, name: "Petals to Stream, Repose in Dream",
+    description: "Deals Ice DMG equal to 120%–240% of Ruan Mei's ATK to all enemies and delays their action based on Weakness Break effects applied."},
+  { id: 4, name: "Inhibitor Lace",
+    description: "When allies break an enemy's Weakness while Ruan Mei's field is active, the enemy's Weakness Broken state is extended and they take additional Break DMG."},
+  { id: 5, name: "Silken Serenade",
+    description: "After using Technique, creates a dimensional field that increases allies' Weakness Break Efficiency and applies a buff at the start of battle."},
+  { id: 6, name: "Backed by Morn, Wrapped by Night",
+    description: "When Ruan Mei's field is active, allies gain increased Break Effect and enemies suffer extended Weakness Break duration and delay."}
+],
+eidolons: [
+  { id: 1, name: "Bud of Coalesced Truth",
+    description: "While Ruan Mei's field is active, allies ignore a portion of enemy DEF when dealing Break DMG."},
+  { id: 2, name: "Seedling of Intellect",
+    description: "Increases the DMG dealt by allies to Weakness Broken enemies."},
+  { id: 3, name: "Sprout of A Thousand Thoughts",
+    description: "Skill Lv. +2 (up to Lv. 15), Talent Lv. +2 (up to Lv. 15)."},
+  { id: 4, name: "Blossom of Recollection",
+    description: "When enemies enter battle, reduces their Toughness immediately under certain conditions."},
+  { id: 5, name: "Floral Triptych",
+    description: "Ultimate Lv. +2 (up to Lv. 15), Basic ATK Lv. +1 (up to Lv. 10)."},
+  { id: 6, name: "Scent of Surrender",
+    description: "Extends the duration of Ruan Mei's field and significantly increases its Break-related effects."}
+]
   },
    "41" : {
     name:  "Xueyi",
@@ -449,8 +1529,35 @@ const HonkaiStarRailCharacters = {
     path: "Destruction",
     type: "Quantum",
     world: "",
-    description: "Description Coming Soon",
     image: SpecialPassImg,
+    abilities: [
+  { id: 1, name: "Mara-Sunder Awl",
+    description: "Deals Quantum DMG equal to 100% of Xueyi's ATK to a single target enemy."},
+  { id: 2, name: "Iniquity Obliteration",
+    description: "Deals Quantum DMG equal to 140% of Xueyi's ATK to a single enemy and 70% of ATK as Quantum DMG to adjacent enemies."},
+  { id: 3, name: "Divine Castigation",
+    description: "Deals Quantum DMG equal to 250% of Xueyi's ATK to a single enemy. Ignores Weakness Type and reduces Toughness; damage increases based on Toughness reduction (up to 60%). Weakness Break triggers Quantum Break effect."},
+  { id: 4, name: "Karmic Perpetuation",
+    description: "When allies reduce enemy Toughness, Xueyi gains Karma stacks. When full, she consumes Karma to launch follow-up attacks dealing Quantum DMG."},
+  { id: 5, name: "Summary Execution",
+    description: "After using Technique, immediately attacks all enemies and deals Quantum DMG at the start of battle."},
+  { id: 6, name: "Perspicacious Mainframe",
+    description: "Allows Xueyi to store excess Karma stacks up to a limit, increasing follow-up attack frequency."}
+],
+eidolons: [
+  { id: 1, name: "Dvesha, Inhibited",
+    description: "Increases the DMG dealt by Xueyi’s follow-up attacks by 40%."},
+  { id: 2, name: "Klesha, Breached",
+    description: "Xueyi’s follow-up attacks reduce Toughness regardless of Weakness Type and restore 5% of her Max HP. Triggers Quantum Break effect when breaking Weakness."},
+  { id: 3, name: "Duḥkha, Ceased",
+    description: "Skill Lv. +2 (up to Lv. 15) and Basic ATK Lv. +1 (up to Lv. 10)."},
+  { id: 4, name: "Karma, Severed",
+    description: "After using Ultimate, increases Break Effect by 40% for 2 turn(s)."},
+  { id: 5, name: "Deva, Enthralled",
+    description: "Ultimate Lv. +2 (up to Lv. 15) and Talent Lv. +2 (up to Lv. 15)."},
+  { id: 6, name: "Saṃsāra, Mastered",
+    description: "Reduces maximum Karma stack requirement to 6, allowing more frequent follow-up attacks."}
+]
   },
    "42" : {
     name:  "Black Swan",
@@ -460,7 +1567,7 @@ const HonkaiStarRailCharacters = {
     path: "Nihility",
     type: "Wind",
     world: "",
-    description: "Description Coming Soon",
+    
     image: SpecialPassImg,
   },
    "43" : {
@@ -471,7 +1578,7 @@ const HonkaiStarRailCharacters = {
     path: "Destruction",
     type: "Ice",
     world: "",
-    description: "Description Coming Soon",
+    
     image: SpecialPassImg,
   },
    "44" : {
@@ -482,7 +1589,7 @@ const HonkaiStarRailCharacters = {
     path: "Harmony",
     type: "Quantum",
     world: "",
-    description: "Description Coming Soon",
+    
     image: SpecialPassImg,
   },
    "45" : {
@@ -493,7 +1600,7 @@ const HonkaiStarRailCharacters = {
     path: "Nihility",
     type: "Lightning",
     world: "",
-    description: "Description Coming Soon",
+    
     image: SpecialPassImg,
   },
    "46" : {
@@ -504,7 +1611,7 @@ const HonkaiStarRailCharacters = {
     path: "Preservation",
     type: "Imaginary",
     world: "",
-    description: "Description Coming Soon",
+    
     image: SpecialPassImg,
   },
    "47" : {
@@ -515,7 +1622,7 @@ const HonkaiStarRailCharacters = {
     path: "Abundance",
     type: "Fire",
     world: "",
-    description: "Description Coming Soon",
+    
     image: SpecialPassImg,
   },
    "48" : {
@@ -526,7 +1633,7 @@ const HonkaiStarRailCharacters = {
     path: "The Hunt",
     type: "Physical",
     world: "",
-    description: "Description Coming Soon",
+    
     image: SpecialPassImg,
   },
    "49" : {
@@ -537,7 +1644,7 @@ const HonkaiStarRailCharacters = {
     path: "Harmony",
     type: "Physical",
     world: "",
-    description: "Description Coming Soon",
+    
     image: SpecialPassImg,
   },
    "50" : {
@@ -548,7 +1655,7 @@ const HonkaiStarRailCharacters = {
     path: "Harmony",
     type: "Imaginary",
     world: "",
-    description: "Description Coming Soon",
+    
     image: SpecialPassImg,
   },
    "51" : {
@@ -559,7 +1666,7 @@ const HonkaiStarRailCharacters = {
     path: "Destruction",
     type: "Fire",
     world: "",
-    description: "Description Coming Soon",
+    
     image: SpecialPassImg,
   },
    "52" : {
@@ -570,7 +1677,7 @@ const HonkaiStarRailCharacters = {
     path: "Erudition",
     type: "Quantum",
     world: "",
-    description: "Description Coming Soon",
+    
     image: SpecialPassImg,
   },
    "53" : {
@@ -581,7 +1688,7 @@ const HonkaiStarRailCharacters = {
     path: "Nihility",
     type: "Fire",
     world: "",
-    description: "Description Coming Soon",
+    
     image: SpecialPassImg,
   },
    "54" : {
@@ -592,7 +1699,7 @@ const HonkaiStarRailCharacters = {
     path: "Destruction",
     type: "Physical",
     world: "",
-    description: "Description Coming Soon",
+    
     image: SpecialPassImg,
   },
    "55" : {
@@ -603,7 +1710,7 @@ const HonkaiStarRailCharacters = {
     path: "The Hunt",
     type: "Wind",
     world: "",
-    description: "Description Coming Soon",
+    
     image: SpecialPassImg,
   },
    "56" : {
@@ -614,7 +1721,7 @@ const HonkaiStarRailCharacters = {
     path: "Abundance",
     type: "Fire",
     world: "",
-    description: "Description Coming Soon",
+    
     image: SpecialPassImg,
   },
    "57" : {
@@ -625,7 +1732,7 @@ const HonkaiStarRailCharacters = {
     path: "The Hunt",
     type: "Lightning",
     world: "",
-    description: "Description Coming Soon",
+    
     image: SpecialPassImg,
   },
    "58" : {
@@ -636,7 +1743,7 @@ const HonkaiStarRailCharacters = {
     path: "Erudition",
     type: "Imaginary",
     world: "",
-    description: "Description Coming Soon",
+    
     image: SpecialPassImg,
   },
    "59" : {
@@ -647,7 +1754,7 @@ const HonkaiStarRailCharacters = {
     path: "Nihility",
     type: "Fire",
     world: "",
-    description: "Description Coming Soon",
+    
     image: SpecialPassImg,
   },
    "60" : {
@@ -658,7 +1765,7 @@ const HonkaiStarRailCharacters = {
     path: "Harmony",
     type: "Imaginary",
     world: "",
-    description: "Description Coming Soon",
+    
     image: SpecialPassImg,
   },
    "61" : {
@@ -669,7 +1776,7 @@ const HonkaiStarRailCharacters = {
     path: "Remembrance",
     type: "Lightning",
     world: "",
-    description: "Description Coming Soon",
+    
     image: SpecialPassImg,
   },
    "62" : {
@@ -680,7 +1787,7 @@ const HonkaiStarRailCharacters = {
     path: "Erudition",
     type: "Ice",
     world: "",
-    description: "Description Coming Soon",
+    
     image: SpecialPassImg,
   },
    "63" : {
@@ -691,7 +1798,7 @@ const HonkaiStarRailCharacters = {
     path: "Remembrance",
     type: "Ice",
     world: "",
-    description: "Description Coming Soon",
+    
     image: SpecialPassImg,
   },
    "64" : {
@@ -702,7 +1809,7 @@ const HonkaiStarRailCharacters = {
     path: "Destruction",
     type: "Imaginary",
     world: "",
-    description: "Description Coming Soon",
+    
     image: SpecialPassImg,
   },
    "65" : {
@@ -713,7 +1820,7 @@ const HonkaiStarRailCharacters = {
     path: "Harmony",
     type: "Quantum",
     world: "",
-    description: "Description Coming Soon",
+    
     image: SpecialPassImg,
   },
    "66" : {
@@ -724,7 +1831,7 @@ const HonkaiStarRailCharacters = {
     path: "Remembrance",
     type: "Quantum",
     world: "",
-    description: "Description Coming Soon",
+    
     image: SpecialPassImg,
   },
    "67" : {
@@ -735,7 +1842,7 @@ const HonkaiStarRailCharacters = {
     path: "Erudition",
     type: "Wind",
     world: "",
-    description: "Description Coming Soon",
+    
     image: SpecialPassImg,
   },
   "68" : {
@@ -746,7 +1853,7 @@ const HonkaiStarRailCharacters = {
     path: "Nihility",
     type: "Quantum",
     world: "",
-    description: "Description Coming Soon",
+    
     image: SpecialPassImg,
   },
   "69" : {  
@@ -757,7 +1864,7 @@ const HonkaiStarRailCharacters = {
     path: "Remembrance",
     type: "Wind",
     world: "",
-    description: "Description Coming Soon",
+    
     image: SpecialPassImg,
   },
   "70" : {  
@@ -768,7 +1875,7 @@ const HonkaiStarRailCharacters = {
     path: "The Hunt",
     type: "Quantum",
     world: "",
-    description: "Description Coming Soon",
+    
     image: SpecialPassImg,
   },
   "71" : {  
@@ -779,7 +1886,7 @@ const HonkaiStarRailCharacters = {
     path: "Destruction",
     type: "Physical",
     world: "",
-    description: "Description Coming Soon",
+    
     image: SpecialPassImg,
   },
   "72" : {  
@@ -790,7 +1897,7 @@ const HonkaiStarRailCharacters = {
     path: "Destruction",
     type: "Wind",
     world: "",
-    description: "Description Coming Soon",
+    
     image: SpecialPassImg,
   },
   "73" : {  
@@ -801,7 +1908,7 @@ const HonkaiStarRailCharacters = {
     path: "Harmony",
     type: "Wind",
     world: "",
-    description: "Description Coming Soon",
+    
     image: SpecialPassImg,
   },
   "74" : {  
@@ -812,7 +1919,7 @@ const HonkaiStarRailCharacters = {
     path: "Nihility",
     type: "Physical",
     world: "",
-    description: "Description Coming Soon",
+    
     image: SpecialPassImg,
   }
 };
