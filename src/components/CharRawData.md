@@ -182,11 +182,27 @@ Trailblazer		5 Star	 Remembrance	Ice			3.0
 Mydei			5 Star	 Destruction	Imaginary	3.1
 Tribbie			5 Star	 Harmony	 	Quantum		3.1
 Castorice		5 Star	 Remembrance	Quantum		3.2
-Anaxa			5 Star	 Erudition	 	Wind
-Cipher			5 Star	 Nihility	 	Quantum
-Hyacine			5 Star	 Remembrance	Wind
+Anaxa			5 Star	 Erudition	 	Wind        3.2
+Cipher			5 Star	 Nihility	 	Quantum     3.3
+Hyacine			5 Star	 Remembrance	Wind        3.3
+Archer	        5 Star   The Hunt	    Quantum	    3.4
+Phainon     	5 Star   Destruction  	Physical 	3.4
+Saber       	5 Star   Destruction  	Wind  	    3.4
+Cerydra         5 Star   Harmony        Wind        3.5
+Hysilens        5 Star   Nihility       Physical    3.5
+Evernight       5 Star   Remembrance    Ice         3.6
+Cyrene          5 Star   Remembrance    Ice         3.7
+The Dahlia      5 Star   Nihility       Fire        3.8
+Sparxie         5 Star   Elation        Fire        4.0
+Yao Guang       5 Star   Elation        Physical    4.0
+Ashveil         5 Star   The Hunt       Lightning   4.1
+Evanescia       5 Star   Elation        Physical    4.2
+Trailblazer     5 Star   Elation        Lightning   4.2
+Mortenax Blade  5 Star   Nihility       Fire        4.3
 
 <!-------------------- Special Case of HSR -------------------->
+Silver Wolf LV.999           5 Star    Elation     Imaginary   4.2
+Dan Heng • Permansor Terrae  5 Star   Preservation    Physical   3.6
 March 7th					4 Star	 The Hunt	 Imaginary	2.4
 Dan Heng • Imbibitor Lunar  5 Star 	 Destruction Imaginary  1.3
 
